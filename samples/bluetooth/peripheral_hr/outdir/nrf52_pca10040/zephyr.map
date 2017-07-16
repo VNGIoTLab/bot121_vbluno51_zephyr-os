@@ -1,0 +1,3660 @@
+Archive member included to satisfy reference by file (symbol)
+
+drivers/built-in.o            (--whole-archive)
+kernel/built-in.o             (--whole-archive)
+lib/built-in.o                (--whole-archive)
+misc/built-in.o               (--whole-archive)
+boards/built-in.o             (--whole-archive)
+ext/built-in.o                (--whole-archive)
+subsys/built-in.o             (--whole-archive)
+arch/built-in.o               (--whole-archive)
+kernel/lib.a(device.o)        drivers/built-in.o (device_get_binding)
+kernel/lib.a(errno.o)         lib/built-in.o (__errno)
+kernel/lib.a(idle.o)          arch/built-in.o (_sys_power_save_idle_exit)
+kernel/lib.a(init.o)          subsys/built-in.o (k_call_stacks_analyze)
+kernel/lib.a(mutex.o)         subsys/built-in.o (k_mutex_lock)
+kernel/lib.a(poll.o)          subsys/built-in.o (k_poll_event_init)
+kernel/lib.a(queue.o)         subsys/built-in.o (k_queue_init)
+kernel/lib.a(sched.o)         kernel/lib.a(init.o) (_add_thread_to_ready_q)
+kernel/lib.a(sem.o)           subsys/built-in.o (k_sem_init)
+kernel/lib.a(sys_clock.o)     drivers/built-in.o (_sys_clock_tick_count)
+kernel/lib.a(system_work_q.o)
+                              subsys/built-in.o (k_sys_work_q)
+kernel/lib.a(thread.o)        arch/built-in.o (k_is_in_isr)
+kernel/lib.a(work_q.o)        kernel/lib.a(system_work_q.o) (k_work_q_start)
+/home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_lshrdi3.o)
+                              lib/built-in.o (__aeabi_llsr)
+/home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_ashldi3.o)
+                              lib/built-in.o (__aeabi_llsl)
+/home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o)
+                              subsys/built-in.o (__aeabi_uldivmod)
+/home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_popcountsi2.o)
+                              drivers/built-in.o (__popcountsi2)
+/home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+                              /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o) (__udivmoddi4)
+/home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_dvmd_tls.o)
+                              /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o) (__aeabi_ldiv0)
+
+Allocating common symbols
+Common symbol       size              file
+
+bt_auth             0x4               subsys/built-in.o
+rpa_last_ms         0x8               subsys/built-in.o
+_sys_pm_idle_exit_notify
+                    0x1               kernel/lib.a(idle.o)
+wl_anon             0x1               subsys/built-in.o
+bt_storage          0x4               subsys/built-in.o
+_handling_timeouts  0x4               kernel/lib.a(sys_clock.o)
+recv_thread_data    0x68              subsys/built-in.o
+rpa_work            0x28              subsys/built-in.o
+default_conn        0x4               src/built-in.o
+_time_slice_elapsed
+                    0x4               kernel/lib.a(sys_clock.o)
+_sys_clock_tick_count
+                    0x8               kernel/lib.a(sys_clock.o)
+k_sys_work_q        0x7c              kernel/lib.a(system_work_q.o)
+prio_recv_thread_data
+                    0x68              subsys/built-in.o
+rpa_timeout_ms      0x4               subsys/built-in.o
+
+Discarded input sections
+
+ .text          0x00000000        0x0 isr_tables.o
+ .data          0x00000000        0x0 isr_tables.o
+ .bss           0x00000000        0x0 isr_tables.o
+ .text          0x00000000        0x0 src/built-in.o
+ .data          0x00000000        0x0 src/built-in.o
+ .bss           0x00000000        0x0 src/built-in.o
+ .text          0x00000000        0x0 drivers/built-in.o
+ .text._timer_cycle_get_32
+                0x00000000       0x3c drivers/built-in.o
+ .text.crc16    0x00000000       0x48 drivers/built-in.o
+ .data          0x00000000        0x0 drivers/built-in.o
+ .bss           0x00000000        0x0 drivers/built-in.o
+ .text          0x00000000        0x0 kernel/built-in.o
+ .text.sys_kernel_version_get
+                0x00000000        0x8 kernel/built-in.o
+ .data          0x00000000        0x0 kernel/built-in.o
+ .bss           0x00000000        0x0 kernel/built-in.o
+ .comment       0x00000000       0x6f kernel/built-in.o
+ .debug_aranges
+                0x00000000       0x20 kernel/built-in.o
+ .debug_info    0x00000000       0x8e kernel/built-in.o
+ .debug_abbrev  0x00000000       0x65 kernel/built-in.o
+ .debug_line    0x00000000       0x81 kernel/built-in.o
+ .debug_frame   0x00000000       0x20 kernel/built-in.o
+ .debug_str     0x00000000      0x1f1 kernel/built-in.o
+ .debug_ranges  0x00000000       0x10 kernel/built-in.o
+ .ARM.attributes
+                0x00000000       0x33 kernel/built-in.o
+ .text          0x00000000        0x0 lib/built-in.o
+ .text.fprintf  0x00000000       0x24 lib/built-in.o
+ .text.vfprintf
+                0x00000000       0x10 lib/built-in.o
+ .text.printf   0x00000000       0x24 lib/built-in.o
+ .text.vprintf  0x00000000       0x10 lib/built-in.o
+ .text._to_x    0x00000000       0x52 lib/built-in.o
+ .text._rlrshift
+                0x00000000       0x1e lib/built-in.o
+ .text._ldiv5   0x00000000       0x60 lib/built-in.o
+ .text._get_digit
+                0x00000000       0x2e lib/built-in.o
+ .text._prf     0x00000000      0x74c lib/built-in.o
+ .text.sprintf_out
+                0x00000000       0x1a lib/built-in.o
+ .text.snprintf
+                0x00000000       0x30 lib/built-in.o
+ .text.sprintf  0x00000000       0x30 lib/built-in.o
+ .text.vsnprintf
+                0x00000000       0x24 lib/built-in.o
+ .text.vsprintf
+                0x00000000       0x28 lib/built-in.o
+ .text._stdout_hook_default
+                0x00000000        0x6 lib/built-in.o
+ .text.__stdout_hook_install
+                0x00000000        0xc lib/built-in.o
+ .text.fputc    0x00000000       0x14 lib/built-in.o
+ .text.fputs    0x00000000       0x24 lib/built-in.o
+ .text.fwrite   0x00000000       0x4c lib/built-in.o
+ .text.puts     0x00000000       0x24 lib/built-in.o
+ .text.strncpy  0x00000000       0x22 lib/built-in.o
+ .text.strchr   0x00000000       0x1e lib/built-in.o
+ .text.strrchr  0x00000000       0x1a lib/built-in.o
+ .text.strncmp  0x00000000       0x26 lib/built-in.o
+ .text.strcat   0x00000000       0x16 lib/built-in.o
+ .text.strncat  0x00000000       0x2a lib/built-in.o
+ .text.memchr   0x00000000       0x24 lib/built-in.o
+ .text.strncasecmp
+                0x00000000       0x30 lib/built-in.o
+ .text.strstr   0x00000000       0x38 lib/built-in.o
+ .text.strtol   0x00000000       0xfc lib/built-in.o
+ .text.strtoul  0x00000000       0xf8 lib/built-in.o
+ .text.atoi     0x00000000       0x48 lib/built-in.o
+ .rodata.shifts.3850
+                0x00000000        0x3 lib/built-in.o
+ .rodata.str1.1
+                0x00000000        0xb lib/built-in.o
+ .rodata.charmap
+                0x00000000      0x100 lib/built-in.o
+ .data          0x00000000        0x0 lib/built-in.o
+ .data._stdout_hook
+                0x00000000        0x4 lib/built-in.o
+ .bss           0x00000000        0x0 lib/built-in.o
+ .text          0x00000000        0x0 misc/built-in.o
+ .text.__printk_get_hook
+                0x00000000        0xc misc/built-in.o
+ .text.vsnprintk
+                0x00000000       0x28 misc/built-in.o
+ .data          0x00000000        0x0 misc/built-in.o
+ .bss           0x00000000        0x0 misc/built-in.o
+ .text          0x00000000        0x0 ext/built-in.o
+ .text._compare
+                0x00000000       0x1a ext/built-in.o
+ .text.inv_shift_rows
+                0x00000000       0x72 ext/built-in.o
+ .text.tc_aes128_set_decrypt_key
+                0x00000000        0x4 ext/built-in.o
+ .text.tc_aes_decrypt
+                0x00000000       0xdc ext/built-in.o
+ .rodata.inv_sbox
+                0x00000000      0x100 ext/built-in.o
+ .rodata.gf_wrap
+                0x00000000        0x1 ext/built-in.o
+ .data          0x00000000        0x0 ext/built-in.o
+ .bss           0x00000000        0x0 ext/built-in.o
+ .text          0x00000000        0x0 subsys/built-in.o
+ .text.bt_addr_str
+                0x00000000       0x48 subsys/built-in.o
+ .text.bt_uuid_to_str
+                0x00000000       0xac subsys/built-in.o
+ .text.bt_uuid_str
+                0x00000000       0x14 subsys/built-in.o
+ .text.bt_addr_le_create_nrpa
+                0x00000000       0x1c subsys/built-in.o
+ .text.bt_le_adv_stop
+                0x00000000       0x44 subsys/built-in.o
+ .text.bt_le_scan_start
+                0x00000000      0x150 subsys/built-in.o
+ .text.bt_le_scan_stop
+                0x00000000       0x2c subsys/built-in.o
+ .text.bt_storage_register
+                0x00000000        0xc subsys/built-in.o
+ .text.bt_storage_clear
+                0x00000000       0x48 subsys/built-in.o
+ .text.bt_hci_get_cmd_opcode
+                0x00000000        0xa subsys/built-in.o
+ .text.bt_pub_key_get
+                0x00000000       0x1c subsys/built-in.o
+ .text.bt_le_oob_get_local
+                0x00000000       0x14 subsys/built-in.o
+ .text.bt_conn_le_start_encryption
+                0x00000000       0x72 subsys/built-in.o
+ .text.bt_conn_enc_key_size
+                0x00000000        0xe subsys/built-in.o
+ .text.bt_conn_get_info
+                0x00000000       0x40 subsys/built-in.o
+ .text.bt_conn_disconnect_all
+                0x00000000       0x24 subsys/built-in.o
+ .text.bt_conn_create_slave_le
+                0x00000000        0x4 subsys/built-in.o
+ .text.bt_conn_auth_passkey_entry
+                0x00000000       0x20 subsys/built-in.o
+ .text.bt_conn_auth_passkey_confirm
+                0x00000000       0x18 subsys/built-in.o
+ .text.bt_conn_auth_cancel
+                0x00000000       0x18 subsys/built-in.o
+ .text.bt_conn_auth_pairing_confirm
+                0x00000000       0x18 subsys/built-in.o
+ .text.bt_l2cap_chan_add
+                0x00000000       0x1e subsys/built-in.o
+ .text.bt_l2cap_create_rsp
+                0x00000000       0x34 subsys/built-in.o
+ .text.bt_att_get_mtu
+                0x00000000        0xe subsys/built-in.o
+ .text.bt_att_send
+                0x00000000       0xc4 subsys/built-in.o
+ .text.bt_att_req_cancel
+                0x00000000       0x62 subsys/built-in.o
+ .text.get_service_handles
+                0x00000000       0x44 subsys/built-in.o
+ .text.bt_gatt_attr_read_included
+                0x00000000       0x5c subsys/built-in.o
+ .text.bt_gatt_service_unregister
+                0x00000000       0x5c subsys/built-in.o
+ .text.bt_gatt_attr_read_cep
+                0x00000000       0x22 subsys/built-in.o
+ .text.bt_gatt_attr_read_cud
+                0x00000000       0x32 subsys/built-in.o
+ .text.bt_gatt_attr_read_cpf
+                0x00000000       0x18 subsys/built-in.o
+ .text.bt_gatt_indicate
+                0x00000000        0xc subsys/built-in.o
+ .text.bt_gatt_get_mtu
+                0x00000000        0x4 subsys/built-in.o
+ .text.bt_smp_sign
+                0x00000000        0x6 subsys/built-in.o
+ .text.bt_smp_auth_passkey_entry
+                0x00000000       0x8e subsys/built-in.o
+ .text.bt_smp_auth_passkey_confirm
+                0x00000000       0x62 subsys/built-in.o
+ .text.bt_smp_auth_cancel
+                0x00000000       0x44 subsys/built-in.o
+ .text.bt_smp_auth_pairing_confirm
+                0x00000000       0x58 subsys/built-in.o
+ .text.bt_keys_clear_all
+                0x00000000       0x10 subsys/built-in.o
+ .text.mem_ut   0x00000000       0xac subsys/built-in.o
+ .text.memq_ut  0x00000000        0x6 subsys/built-in.o
+ .text.ecb_cb   0x00000000       0x16 subsys/built-in.o
+ .text.ecb_encrypt_be
+                0x00000000       0x32 subsys/built-in.o
+ .text.ecb_encrypt_nonblocking
+                0x00000000       0x50 subsys/built-in.o
+ .text.isr_ecb  0x00000000       0x84 subsys/built-in.o
+ .text.ecb_ut   0x00000000       0x80 subsys/built-in.o
+ .text.radio_has_disabled
+                0x00000000       0x14 subsys/built-in.o
+ .text.radio_bc_status_reset
+                0x00000000       0x10 subsys/built-in.o
+ .text.radio_bc_has_match
+                0x00000000       0x14 subsys/built-in.o
+ .text.radio_tmr_sample
+                0x00000000        0xc subsys/built-in.o
+ .text.radio_tmr_sample_get
+                0x00000000        0xc subsys/built-in.o
+ .text.bt_encrypt_be
+                0x00000000        0xa subsys/built-in.o
+ .text.event_scan_prepare
+                0x00000000       0x70 subsys/built-in.o
+ .text.event_scan
+                0x00000000      0x1a0 subsys/built-in.o
+ .text.radio_ticks_active_to_start_set
+                0x00000000        0xc subsys/built-in.o
+ .text.ll_irk_clear
+                0x00000000        0xc subsys/built-in.o
+ .text.ll_irk_add
+                0x00000000       0x2c subsys/built-in.o
+ .text.ll_chm_update
+                0x00000000       0x84 subsys/built-in.o
+ .text.ll_chm_get
+                0x00000000       0x1e subsys/built-in.o
+ .text.radio_rx_fc_get
+                0x00000000       0x28 subsys/built-in.o
+ .text.ll_enc_req_send
+                0x00000000       0xb4 subsys/built-in.o
+ .text.radio_scan_enable
+                0x00000000      0x164 subsys/built-in.o
+ .text.radio_scan_disable
+                0x00000000       0x58 subsys/built-in.o
+ .text.radio_connect_enable
+                0x00000000      0x2ac subsys/built-in.o
+ .text.ll_connect_disable
+                0x00000000       0x14 subsys/built-in.o
+ .text.net_buf_reset
+                0x00000000        0xc subsys/built-in.o
+ .text.net_buf_clone
+                0x00000000       0x38 subsys/built-in.o
+ .text.net_buf_frag_last
+                0x00000000        0xa subsys/built-in.o
+ .text.net_buf_frag_insert
+                0x00000000       0x16 subsys/built-in.o
+ .text.net_buf_frag_add
+                0x00000000       0x20 subsys/built-in.o
+ .text.net_buf_frag_del
+                0x00000000       0x18 subsys/built-in.o
+ .text.net_buf_simple_add_le16
+                0x00000000       0x1e subsys/built-in.o
+ .text.net_buf_simple_add_be16
+                0x00000000       0x22 subsys/built-in.o
+ .text.net_buf_simple_add_le32
+                0x00000000       0x1e subsys/built-in.o
+ .text.net_buf_simple_add_be32
+                0x00000000       0x1e subsys/built-in.o
+ .text.net_buf_simple_push_le16
+                0x00000000       0x22 subsys/built-in.o
+ .text.net_buf_simple_push_be16
+                0x00000000       0x28 subsys/built-in.o
+ .text.net_buf_simple_push_u8
+                0x00000000       0x12 subsys/built-in.o
+ .text.net_buf_simple_pull_be16
+                0x00000000       0x16 subsys/built-in.o
+ .text.net_buf_simple_pull_le32
+                0x00000000       0x10 subsys/built-in.o
+ .text.net_buf_simple_pull_be32
+                0x00000000       0x24 subsys/built-in.o
+ .text.syslog_hook_default
+                0x00000000        0x6 subsys/built-in.o
+ .text.syslog_hook_install
+                0x00000000        0xc subsys/built-in.o
+ .rodata.__func__.7439
+                0x00000000        0xc subsys/built-in.o
+ .rodata.__func__.7877
+                0x00000000        0x8 subsys/built-in.o
+ .rodata.__func__.9616
+                0x00000000        0xb subsys/built-in.o
+ .rodata.__func__.9608
+                0x00000000       0x13 subsys/built-in.o
+ .data          0x00000000        0x0 subsys/built-in.o
+ .data.syslog_hook
+                0x00000000        0x4 subsys/built-in.o
+ .bss           0x00000000        0x0 subsys/built-in.o
+ .bss.cur.5738  0x00000000        0x1 subsys/built-in.o
+ .bss.bufs.5737
+                0x00000000       0x24 subsys/built-in.o
+ .bss.str.3905  0x00000000       0x25 subsys/built-in.o
+ .text          0x00000000        0x0 arch/built-in.o
+ .text.isr_tables_syms
+                0x00000000        0x2 arch/built-in.o
+ .text._NanoIdleValGet
+                0x00000000        0xc arch/built-in.o
+ .text._NanoIdleValClear
+                0x00000000        0xc arch/built-in.o
+ .text.k_cpu_atomic_idle
+                0x00000000       0x14 arch/built-in.o
+ .text.sys_arch_reboot
+                0x00000000       0x24 arch/built-in.o
+ .text.sys_exc_esf_dump
+                0x00000000       0x68 arch/built-in.o
+ .text.arm_core_mpu_enable
+                0x00000000       0x1c arch/built-in.o
+ .text.arm_core_mpu_disable
+                0x00000000       0x1c arch/built-in.o
+ .text.arm_core_mpu_configure
+                0x00000000       0x40 arch/built-in.o
+ .data          0x00000000        0x0 arch/built-in.o
+ .bss           0x00000000        0x0 arch/built-in.o
+ .text          0x00000000        0x0 kernel/lib.a(device.o)
+ .data          0x00000000        0x0 kernel/lib.a(device.o)
+ .bss           0x00000000        0x0 kernel/lib.a(device.o)
+ .text.device_busy_set
+                0x00000000        0x2 kernel/lib.a(device.o)
+ .text.device_busy_clear
+                0x00000000        0x2 kernel/lib.a(device.o)
+ .text          0x00000000        0x0 kernel/lib.a(errno.o)
+ .data          0x00000000        0x0 kernel/lib.a(errno.o)
+ .bss           0x00000000        0x0 kernel/lib.a(errno.o)
+ .text.__errno  0x00000000        0xc kernel/lib.a(errno.o)
+ .text          0x00000000        0x0 kernel/lib.a(idle.o)
+ .data          0x00000000        0x0 kernel/lib.a(idle.o)
+ .bss           0x00000000        0x0 kernel/lib.a(idle.o)
+ .text._sys_soc_resume
+                0x00000000        0x2 kernel/lib.a(idle.o)
+ .text._sys_soc_resume_from_deep_sleep
+                0x00000000        0x2 kernel/lib.a(idle.o)
+ COMMON         0x00000000        0x1 kernel/lib.a(idle.o)
+ .text          0x00000000        0x0 kernel/lib.a(init.o)
+ .data          0x00000000        0x0 kernel/lib.a(init.o)
+ .bss           0x00000000        0x0 kernel/lib.a(init.o)
+ .text.main     0x00000000        0x2 kernel/lib.a(init.o)
+ .rodata._main_thread
+                0x00000000        0x4 kernel/lib.a(init.o)
+ .text          0x00000000        0x0 kernel/lib.a(mutex.o)
+ .data          0x00000000        0x0 kernel/lib.a(mutex.o)
+ .bss           0x00000000        0x0 kernel/lib.a(mutex.o)
+ .text.k_mutex_init
+                0x00000000        0xc kernel/lib.a(mutex.o)
+ .text          0x00000000        0x0 kernel/lib.a(poll.o)
+ .data          0x00000000        0x0 kernel/lib.a(poll.o)
+ .bss           0x00000000        0x0 kernel/lib.a(poll.o)
+ .text.k_poll_signal_init
+                0x00000000        0x8 kernel/lib.a(poll.o)
+ .text          0x00000000        0x0 kernel/lib.a(queue.o)
+ .data          0x00000000        0x0 kernel/lib.a(queue.o)
+ .bss           0x00000000        0x0 kernel/lib.a(queue.o)
+ .text.k_queue_cancel_wait
+                0x00000000       0x60 kernel/lib.a(queue.o)
+ .text.k_queue_merge_slist
+                0x00000000       0x12 kernel/lib.a(queue.o)
+ .text          0x00000000        0x0 kernel/lib.a(sched.o)
+ .data          0x00000000        0x0 kernel/lib.a(sched.o)
+ .bss           0x00000000        0x0 kernel/lib.a(sched.o)
+ .text.k_sched_lock
+                0x00000000       0x10 kernel/lib.a(sched.o)
+ .text.k_thread_priority_get
+                0x00000000        0x6 kernel/lib.a(sched.o)
+ .text.k_thread_priority_set
+                0x00000000       0x36 kernel/lib.a(sched.o)
+ .text.k_wakeup
+                0x00000000       0x80 kernel/lib.a(sched.o)
+ .text.k_sched_time_slice_set
+                0x00000000       0x1c kernel/lib.a(sched.o)
+ .text.k_is_preempt_thread
+                0x00000000       0x34 kernel/lib.a(sched.o)
+ .text          0x00000000        0x0 kernel/lib.a(sem.o)
+ .data          0x00000000        0x0 kernel/lib.a(sem.o)
+ .bss           0x00000000        0x0 kernel/lib.a(sem.o)
+ .text._sem_give_non_preemptible
+                0x00000000       0x2c kernel/lib.a(sem.o)
+ .text          0x00000000        0x0 kernel/lib.a(sys_clock.o)
+ .data          0x00000000        0x0 kernel/lib.a(sys_clock.o)
+ .bss           0x00000000        0x0 kernel/lib.a(sys_clock.o)
+ .text._tick_get_32
+                0x00000000        0xc kernel/lib.a(sys_clock.o)
+ .text.k_uptime_get_32
+                0x00000000       0x14 kernel/lib.a(sys_clock.o)
+ .text.sys_tick_delta
+                0x00000000       0x30 kernel/lib.a(sys_clock.o)
+ .text.sys_tick_delta_32
+                0x00000000       0x24 kernel/lib.a(sys_clock.o)
+ .text.k_uptime_delta
+                0x00000000       0x18 kernel/lib.a(sys_clock.o)
+ .text.k_uptime_delta_32
+                0x00000000        0x8 kernel/lib.a(sys_clock.o)
+ .data.sys_clock_hw_cycles_per_tick
+                0x00000000        0x4 kernel/lib.a(sys_clock.o)
+ .data.sys_clock_us_per_tick
+                0x00000000        0x4 kernel/lib.a(sys_clock.o)
+ .text          0x00000000        0x0 kernel/lib.a(system_work_q.o)
+ .data          0x00000000        0x0 kernel/lib.a(system_work_q.o)
+ .bss           0x00000000        0x0 kernel/lib.a(system_work_q.o)
+ .text          0x00000000        0x0 kernel/lib.a(thread.o)
+ .data          0x00000000        0x0 kernel/lib.a(thread.o)
+ .bss           0x00000000        0x0 kernel/lib.a(thread.o)
+ .text._thread_essential_set
+                0x00000000       0x14 kernel/lib.a(thread.o)
+ .text._thread_essential_clear
+                0x00000000       0x14 kernel/lib.a(thread.o)
+ .text.k_busy_wait
+                0x00000000       0x28 kernel/lib.a(thread.o)
+ .text.k_thread_spawn
+                0x00000000       0x28 kernel/lib.a(thread.o)
+ .text.k_thread_cancel
+                0x00000000       0x32 kernel/lib.a(thread.o)
+ .text._k_thread_group_op
+                0x00000000       0x7c kernel/lib.a(thread.o)
+ .text._k_thread_single_start
+                0x00000000       0x1e kernel/lib.a(thread.o)
+ .text._k_thread_single_suspend
+                0x00000000       0x1a kernel/lib.a(thread.o)
+ .text.k_thread_suspend
+                0x00000000       0x34 kernel/lib.a(thread.o)
+ .text._k_thread_single_resume
+                0x00000000       0x1e kernel/lib.a(thread.o)
+ .text.k_thread_resume
+                0x00000000       0x1c kernel/lib.a(thread.o)
+ .text._k_thread_group_mask_get
+                0x00000000        0x6 kernel/lib.a(thread.o)
+ .text._k_thread_group_join
+                0x00000000        0xa kernel/lib.a(thread.o)
+ .text._k_thread_group_leave
+                0x00000000        0xa kernel/lib.a(thread.o)
+ .text          0x00000000        0x0 kernel/lib.a(work_q.o)
+ .data          0x00000000        0x0 kernel/lib.a(work_q.o)
+ .bss           0x00000000        0x0 kernel/lib.a(work_q.o)
+ .text          0x00000000        0x0 ./arch/arm/core/offsets/offsets.o
+ .data          0x00000000        0x0 ./arch/arm/core/offsets/offsets.o
+ .bss           0x00000000        0x0 ./arch/arm/core/offsets/offsets.o
+ .text          0x00000000       0x18 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_lshrdi3.o)
+ .data          0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_lshrdi3.o)
+ .bss           0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_lshrdi3.o)
+ .ARM.attributes
+                0x00000000       0x1e /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_lshrdi3.o)
+ .text          0x00000000       0x18 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_ashldi3.o)
+ .data          0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_ashldi3.o)
+ .bss           0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_ashldi3.o)
+ .ARM.attributes
+                0x00000000       0x1e /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_ashldi3.o)
+ .data          0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_popcountsi2.o)
+ .bss           0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_popcountsi2.o)
+ .data          0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+ .bss           0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+ .ARM.extab     0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+ .data          0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x00080000         xr
+SRAM             0x20000000         0x00010000         xw
+IDT_LIST         0x20010000         0x00000800         xw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD isr_tables.o
+START GROUP
+LOAD src/built-in.o
+LOAD libzephyr.a
+LOAD kernel/lib.a
+LOAD ./arch/arm/core/offsets/offsets.o
+END GROUP
+LOAD /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a
+                0x00000000                _image_rom_start = 0x0
+
+text            0x00000000    0x13942
+                0x00000000                . = 0x0
+ *(.exc_vector_table)
+ *(.exc_vector_table.*)
+ .exc_vector_table._vector_table_section
+                0x00000000       0x40 arch/built-in.o
+                0x00000000                _vector_table
+ *(.gnu.linkonce.irq_vector_table)
+ .gnu.linkonce.irq_vector_table
+                0x00000040       0x9c isr_tables.o
+                0x00000040                _irq_vector_table
+ *(.openocd_dbg)
+ *(.openocd_dbg.*)
+ *(.kinetis_flash_config)
+ *(.kinetis_flash_config.*)
+ *(.gnu.linkonce.sw_isr_table)
+ .gnu.linkonce.sw_isr_table
+                0x000000dc      0x138 isr_tables.o
+                0x000000dc                _sw_isr_table
+                0x00000214                _image_text_start = .
+ *(.text)
+ .text          0x00000214       0x30 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o)
+                0x00000214                __aeabi_uldivmod
+ .text          0x00000244       0x28 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_popcountsi2.o)
+                0x00000244                __popcountsi2
+ .text          0x0000026c      0x2e4 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+                0x0000026c                __udivmoddi4
+ .text          0x00000550        0x4 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_dvmd_tls.o)
+                0x00000550                __aeabi_ldiv0
+                0x00000550                __aeabi_idiv0
+ *(.text.*)
+ .text.disconnected
+                0x00000554       0x20 src/built-in.o
+ .text.connected
+                0x00000574       0x2c src/built-in.o
+ .text.bt_ready
+                0x000005a0       0x84 src/built-in.o
+ .text.auth_cancel
+                0x00000624       0x70 src/built-in.o
+ .text.main     0x00000694       0x44 src/built-in.o
+                0x00000694                main
+ .text.hrmc_ccc_cfg_changed
+                0x000006d8       0x10 src/built-in.o
+ .text.read_blsc
+                0x000006e8       0x1c src/built-in.o
+ .text.hrs_init
+                0x00000704       0x14 src/built-in.o
+                0x00000704                hrs_init
+ .text.hrs_notify
+                0x00000718       0x3c src/built-in.o
+                0x00000718                hrs_notify
+ .text.read_manuf
+                0x00000754       0x38 src/built-in.o
+ .text.read_model
+                0x0000078c       0x38 src/built-in.o
+ .text.dis_init
+                0x000007c4       0x1c src/built-in.o
+                0x000007c4                dis_init
+ .text.blvl_ccc_cfg_changed
+                0x000007e0       0x10 src/built-in.o
+ .text.read_blvl
+                0x000007f0       0x18 src/built-in.o
+ .text.bas_init
+                0x00000808        0xc src/built-in.o
+                0x00000808                bas_init
+ .text.bas_notify
+                0x00000814       0x30 src/built-in.o
+                0x00000814                bas_notify
+ .text.console_out
+                0x00000844       0x28 drivers/built-in.o
+ .text.uart_console_hook_install
+                0x0000086c        0xc drivers/built-in.o
+                0x0000086c                uart_console_hook_install
+ .text.uart_console_init
+                0x00000878       0x1c drivers/built-in.o
+ .text.uart_nrf5_poll_in
+                0x00000894       0x20 drivers/built-in.o
+ .text.uart_nrf5_poll_out
+                0x000008b4       0x1c drivers/built-in.o
+ .text.uart_nrf5_err_check
+                0x000008d0       0x1a drivers/built-in.o
+ *fill*         0x000008ea        0x2 
+ .text.uart_nrf5_init
+                0x000008ec       0x74 drivers/built-in.o
+ .text.rtc_compare_set
+                0x00000960       0x30 drivers/built-in.o
+ .text.rtc_announce_set_next
+                0x00000990       0x5c drivers/built-in.o
+ .text.rtc1_nrf5_isr
+                0x000009ec       0x10 drivers/built-in.o
+ .text._timer_idle_enter
+                0x000009fc       0x28 drivers/built-in.o
+                0x000009fc                _timer_idle_enter
+ .text._timer_idle_exit
+                0x00000a24       0x2c drivers/built-in.o
+                0x00000a24                _timer_idle_exit
+ .text._sys_clock_driver_init
+                0x00000a50       0x78 drivers/built-in.o
+                0x00000a50                _sys_clock_driver_init
+ .text.gpiote_find_channel
+                0x00000ac8       0x32 drivers/built-in.o
+ .text.gpio_nrf5_read
+                0x00000afa       0x20 drivers/built-in.o
+ .text.gpio_nrf5_write
+                0x00000b1a       0x22 drivers/built-in.o
+ .text.gpio_nrf5_manage_callback
+                0x00000b3c       0x44 drivers/built-in.o
+ .text.gpio_nrf5_enable_callback
+                0x00000b80       0x40 drivers/built-in.o
+ .text.gpio_nrf5_disable_callback
+                0x00000bc0       0x3a drivers/built-in.o
+ .text.gpio_nrf5_P0_init
+                0x00000bfa       0x16 drivers/built-in.o
+ .text.gpio_nrf5_port_isr
+                0x00000c10       0x62 drivers/built-in.o
+ *fill*         0x00000c72        0x2 
+ .text.gpio_nrf5_config
+                0x00000c74      0x104 drivers/built-in.o
+ .text._m16src_stop
+                0x00000d78       0x5c drivers/built-in.o
+ .text._clock_control_init
+                0x00000dd4       0x16 drivers/built-in.o
+ *fill*         0x00000dea        0x2 
+ .text._m16src_start
+                0x00000dec       0xb4 drivers/built-in.o
+ .text._power_clock_isr
+                0x00000ea0       0x9c drivers/built-in.o
+ .text._k32src_start
+                0x00000f3c       0xb8 drivers/built-in.o
+ .text.strcpy   0x00000ff4       0x14 lib/built-in.o
+                0x00000ff4                strcpy
+ .text.strlen   0x00001008       0x10 lib/built-in.o
+                0x00001008                strlen
+ .text.strcmp   0x00001018       0x1a lib/built-in.o
+                0x00001018                strcmp
+ .text.memcmp   0x00001032       0x2e lib/built-in.o
+                0x00001032                memcmp
+ .text.memmove  0x00001060       0x32 lib/built-in.o
+                0x00001060                memmove
+ .text.memcpy   0x00001092       0x58 lib/built-in.o
+                0x00001092                memcpy
+ .text.memset   0x000010ea       0x44 lib/built-in.o
+                0x000010ea                memset
+ .text._nop_char_out
+                0x0000112e        0x4 misc/built-in.o
+ *fill*         0x00001132        0x2 
+ .text.char_out
+                0x00001134       0x10 misc/built-in.o
+ .text._printk_dec_ulong
+                0x00001144       0xa0 misc/built-in.o
+ .text.str_out  0x000011e4       0x2a misc/built-in.o
+ *fill*         0x0000120e        0x2 
+ .text.__printk_hook_install
+                0x00001210        0xc misc/built-in.o
+                0x00001210                __printk_hook_install
+ .text._vprintk
+                0x0000121c      0x244 misc/built-in.o
+                0x0000121c                _vprintk
+ .text.vprintk  0x00001460       0x20 misc/built-in.o
+                0x00001460                vprintk
+ .text.printk   0x00001480       0x1a misc/built-in.o
+                0x00001480                printk
+ *fill*         0x0000149a        0x2 
+ .text.snprintk
+                0x0000149c       0x38 misc/built-in.o
+                0x0000149c                snprintk
+ .text._ConfigAbsSyms
+                0x000014d4        0x2 misc/built-in.o
+                0x000014d4                _ConfigAbsSyms
+ .text._copy    0x000014d6       0x1a ext/built-in.o
+                0x000014d6                _copy
+ .text._set     0x000014f0        0x4 ext/built-in.o
+                0x000014f0                _set
+ .text._double_byte
+                0x000014f4       0x12 ext/built-in.o
+                0x000014f4                _double_byte
+ .text.add_round_key
+                0x00001506      0x114 ext/built-in.o
+ .text.mult_row_column
+                0x0000161a      0x2d4 ext/built-in.o
+ .text.shift_rows
+                0x000018ee       0x72 ext/built-in.o
+ .text.tc_aes128_set_encrypt_key
+                0x00001960       0xb0 ext/built-in.o
+                0x00001960                tc_aes128_set_encrypt_key
+ .text.tc_aes_encrypt
+                0x00001a10       0xd8 ext/built-in.o
+                0x00001a10                tc_aes_encrypt
+ .text.gf_double
+                0x00001ae8       0x2c ext/built-in.o
+                0x00001ae8                gf_double
+ .text.tc_cmac_erase
+                0x00001b14       0x12 ext/built-in.o
+                0x00001b14                tc_cmac_erase
+ .text.tc_cmac_init
+                0x00001b26       0x2e ext/built-in.o
+                0x00001b26                tc_cmac_init
+ .text.tc_cmac_setup
+                0x00001b54       0x58 ext/built-in.o
+                0x00001b54                tc_cmac_setup
+ .text.tc_cmac_update
+                0x00001bac       0xd0 ext/built-in.o
+                0x00001bac                tc_cmac_update
+ .text.tc_cmac_final
+                0x00001c7c       0x6e ext/built-in.o
+                0x00001c7c                tc_cmac_final
+ *fill*         0x00001cea        0x2 
+ .text.bt_hex   0x00001cec       0x6c subsys/built-in.o
+                0x00001cec                bt_hex
+ .text.bt_addr_le_str
+                0x00001d58       0x7c subsys/built-in.o
+                0x00001d58                bt_addr_le_str
+ .text.ah       0x00001dd4       0x3a subsys/built-in.o
+ .text.bt_rpa_irk_matches
+                0x00001e0e       0x26 subsys/built-in.o
+                0x00001e0e                bt_rpa_irk_matches
+ .text.bt_rpa_create
+                0x00001e34       0x2e subsys/built-in.o
+                0x00001e34                bt_rpa_create
+ *fill*         0x00001e62        0x2 
+ .text.uuid_to_uuid128
+                0x00001e64       0x7c subsys/built-in.o
+ .text.bt_uuid_cmp
+                0x00001ee0       0x56 subsys/built-in.o
+                0x00001ee0                bt_uuid_cmp
+ .text.net_buf_user_data
+                0x00001f36        0xc subsys/built-in.o
+ *fill*         0x00001f42        0x2 
+ .text.ver_str  0x00001f44       0x38 subsys/built-in.o
+ .text.atomic_or
+                0x00001f7c       0x22 subsys/built-in.o
+ .text.atomic_test_bit
+                0x00001f9e       0x34 subsys/built-in.o
+ .text.atomic_and
+                0x00001fd2       0x22 subsys/built-in.o
+ .text.update_conn_param
+                0x00001ff4       0x1c subsys/built-in.o
+ .text.update_sec_level
+                0x00002010       0x74 subsys/built-in.o
+ .text.hci_cmd_done
+                0x00002084       0xa0 subsys/built-in.o
+ .text.sys_put_le64
+                0x00002124       0x22 subsys/built-in.o
+ *fill*         0x00002146        0x2 
+ .text.bt_hci_cmd_create
+                0x00002148       0x48 subsys/built-in.o
+                0x00002148                bt_hci_cmd_create
+ .text.bt_hci_cmd_send_sync
+                0x00002190       0x70 subsys/built-in.o
+                0x00002190                bt_hci_cmd_send_sync
+ .text.set_random_address
+                0x00002200       0x5c subsys/built-in.o
+ .text.le_set_private_addr
+                0x0000225c       0x24 subsys/built-in.o
+ .text.bt_hci_stop_scanning
+                0x00002280       0x78 subsys/built-in.o
+ .text.set_advertise_enable
+                0x000022f8       0x58 subsys/built-in.o
+ .text.set_ad   0x00002350       0xa2 subsys/built-in.o
+ .text.bt_le_conn_params_valid
+                0x000023f2       0x40 subsys/built-in.o
+                0x000023f2                bt_le_conn_params_valid
+ *fill*         0x00002432        0x2 
+ .text.bt_le_scan_update
+                0x00002434       0x28 subsys/built-in.o
+                0x00002434                bt_le_scan_update
+ .text.bt_addr_le_create_static
+                0x0000245c       0x1c subsys/built-in.o
+                0x0000245c                bt_addr_le_create_static
+ .text.bt_init  0x00002478      0x5fc subsys/built-in.o
+ .text.init_work
+                0x00002a74       0x18 subsys/built-in.o
+ .text.bt_send  0x00002a8c       0x10 subsys/built-in.o
+                0x00002a8c                bt_send
+ .text.bt_hci_cmd_send
+                0x00002a9c       0x78 subsys/built-in.o
+                0x00002a9c                bt_hci_cmd_send
+ .text.hci_le_set_phy.isra.26
+                0x00002b14       0x40 subsys/built-in.o
+ .text.hci_le_set_data_len.isra.27
+                0x00002b54       0x54 subsys/built-in.o
+ .text.le_conn_param_neg_reply
+                0x00002ba8       0x34 subsys/built-in.o
+ .text.hci_tx_thread
+                0x00002bdc      0x1a4 subsys/built-in.o
+ .text.bt_recv  0x00002d80      0xaa8 subsys/built-in.o
+                0x00002d80                bt_recv
+ .text.bt_recv_prio
+                0x00003828      0x1f0 subsys/built-in.o
+                0x00003828                bt_recv_prio
+ .text.bt_hci_driver_register
+                0x00003a18       0x28 subsys/built-in.o
+                0x00003a18                bt_hci_driver_register
+ .text.bt_enable
+                0x00003a40       0xe4 subsys/built-in.o
+                0x00003a40                bt_enable
+ .text.bt_addr_le_is_bonded
+                0x00003b24       0x16 subsys/built-in.o
+                0x00003b24                bt_addr_le_is_bonded
+ *fill*         0x00003b3a        0x2 
+ .text.bt_le_adv_start
+                0x00003b3c      0x124 subsys/built-in.o
+                0x00003b3c                bt_le_adv_start
+ .text.bt_buf_get_rx
+                0x00003c60       0x24 subsys/built-in.o
+                0x00003c60                bt_buf_get_rx
+ .text.bt_buf_get_cmd_complete
+                0x00003c84       0x48 subsys/built-in.o
+                0x00003c84                bt_buf_get_cmd_complete
+ .text.bt_pub_key_gen
+                0x00003ccc       0xd4 subsys/built-in.o
+                0x00003ccc                bt_pub_key_gen
+ .text.bt_dh_key_gen
+                0x00003da0       0x74 subsys/built-in.o
+                0x00003da0                bt_dh_key_gen
+ .text.notify_connected
+                0x00003e14       0x20 subsys/built-in.o
+ .text.bt_conn_reset_rx_state
+                0x00003e34       0x16 subsys/built-in.o
+ .text.atomic_dec
+                0x00003e4a       0x1a subsys/built-in.o
+ .text.conn_cleanup
+                0x00003e64       0x2a subsys/built-in.o
+ .text.atomic_inc
+                0x00003e8e       0x1a subsys/built-in.o
+ .text.bt_conn_get_pkts
+                0x00003ea8        0x8 subsys/built-in.o
+                0x00003ea8                bt_conn_get_pkts
+ .text.notify_le_param_updated
+                0x00003eb0       0x28 subsys/built-in.o
+                0x00003eb0                notify_le_param_updated
+ .text.le_param_req
+                0x00003ed8       0x40 subsys/built-in.o
+                0x00003ed8                le_param_req
+ .text.bt_conn_identity_resolved
+                0x00003f18       0x34 subsys/built-in.o
+                0x00003f18                bt_conn_identity_resolved
+ .text.bt_conn_security_changed
+                0x00003f4c       0x20 subsys/built-in.o
+                0x00003f4c                bt_conn_security_changed
+ .text.bt_conn_security
+                0x00003f6c       0x3c subsys/built-in.o
+                0x00003f6c                bt_conn_security
+ .text.bt_conn_cb_register
+                0x00003fa8       0x10 subsys/built-in.o
+                0x00003fa8                bt_conn_cb_register
+ .text.bt_conn_recv
+                0x00003fb8      0x148 subsys/built-in.o
+                0x00003fb8                bt_conn_recv
+ .text.bt_conn_send_cb
+                0x00004100       0x94 subsys/built-in.o
+                0x00004100                bt_conn_send_cb
+ .text.bt_conn_notify_tx
+                0x00004194       0x44 subsys/built-in.o
+                0x00004194                bt_conn_notify_tx
+ .text.send_frag
+                0x000041d8       0xdc subsys/built-in.o
+ .text.bt_conn_prepare_events
+                0x000042b4       0x90 subsys/built-in.o
+                0x000042b4                bt_conn_prepare_events
+ .text.bt_conn_add_le
+                0x00004344       0x70 subsys/built-in.o
+                0x00004344                bt_conn_add_le
+ .text.bt_conn_set_state
+                0x000043b4      0x17c subsys/built-in.o
+                0x000043b4                bt_conn_set_state
+ .text.bt_conn_lookup_handle
+                0x00004530       0x38 subsys/built-in.o
+                0x00004530                bt_conn_lookup_handle
+ .text.bt_conn_addr_le_cmp
+                0x00004568       0x30 subsys/built-in.o
+                0x00004568                bt_conn_addr_le_cmp
+ .text.bt_conn_lookup_addr_le
+                0x00004598       0x34 subsys/built-in.o
+                0x00004598                bt_conn_lookup_addr_le
+ .text.bt_conn_lookup_state_le
+                0x000045cc       0x44 subsys/built-in.o
+                0x000045cc                bt_conn_lookup_state_le
+ .text.bt_conn_ref
+                0x00004610        0xe subsys/built-in.o
+                0x00004610                bt_conn_ref
+ .text.bt_conn_unref
+                0x0000461e        0x6 subsys/built-in.o
+                0x0000461e                bt_conn_unref
+ .text.bt_conn_get_dst
+                0x00004624        0x4 subsys/built-in.o
+                0x00004624                bt_conn_get_dst
+ .text.bt_conn_disconnect
+                0x00004628       0x72 subsys/built-in.o
+                0x00004628                bt_conn_disconnect
+ .text.bt_conn_le_conn_update
+                0x0000469a       0x4e subsys/built-in.o
+                0x0000469a                bt_conn_le_conn_update
+ .text.bt_conn_le_param_update
+                0x000046e8       0x6c subsys/built-in.o
+                0x000046e8                bt_conn_le_param_update
+ .text.le_conn_update
+                0x00004754       0x30 subsys/built-in.o
+ .text.bt_conn_create_pdu
+                0x00004784       0x24 subsys/built-in.o
+                0x00004784                bt_conn_create_pdu
+ .text.create_frag.isra.5
+                0x000047a8       0x70 subsys/built-in.o
+ .text.bt_conn_process_tx
+                0x00004818       0xe8 subsys/built-in.o
+                0x00004818                bt_conn_process_tx
+ .text.bt_conn_auth_cb_register
+                0x00004900       0x28 subsys/built-in.o
+                0x00004900                bt_conn_auth_cb_register
+ .text.bt_conn_init
+                0x00004928       0x40 subsys/built-in.o
+                0x00004928                bt_conn_init
+ .text.l2cap_disconnected
+                0x00004968        0x2 subsys/built-in.o
+ *fill*         0x0000496a        0x2 
+ .text.l2cap_accept
+                0x0000496c       0x54 subsys/built-in.o
+ .text.l2cap_connected
+                0x000049c0        0x2 subsys/built-in.o
+ *fill*         0x000049c2        0x2 
+ .text.bt_l2cap_le_fixed_chan_register
+                0x000049c4       0x20 subsys/built-in.o
+                0x000049c4                bt_l2cap_le_fixed_chan_register
+ .text.bt_l2cap_chan_remove
+                0x000049e4       0x42 subsys/built-in.o
+                0x000049e4                bt_l2cap_chan_remove
+ .text.bt_l2cap_chan_del
+                0x00004a26       0x22 subsys/built-in.o
+                0x00004a26                bt_l2cap_chan_del
+ .text.l2cap_rtx_timeout
+                0x00004a48       0x50 subsys/built-in.o
+ .text.bt_l2cap_connected
+                0x00004a98       0x70 subsys/built-in.o
+                0x00004a98                bt_l2cap_connected
+ .text.bt_l2cap_disconnected
+                0x00004b08       0x30 subsys/built-in.o
+                0x00004b08                bt_l2cap_disconnected
+ .text.bt_l2cap_encrypt_change
+                0x00004b38       0x1e subsys/built-in.o
+                0x00004b38                bt_l2cap_encrypt_change
+ .text.bt_l2cap_create_pdu
+                0x00004b56        0x6 subsys/built-in.o
+                0x00004b56                bt_l2cap_create_pdu
+ .text.bt_l2cap_send_cb
+                0x00004b5c       0x2a subsys/built-in.o
+                0x00004b5c                bt_l2cap_send_cb
+ *fill*         0x00004b86        0x2 
+ .text.l2cap_recv
+                0x00004b88      0x11c subsys/built-in.o
+ .text.bt_l2cap_le_lookup_tx_cid
+                0x00004ca4       0x16 subsys/built-in.o
+                0x00004ca4                bt_l2cap_le_lookup_tx_cid
+ .text.bt_l2cap_le_lookup_rx_cid
+                0x00004cba       0x14 subsys/built-in.o
+                0x00004cba                bt_l2cap_le_lookup_rx_cid
+ *fill*         0x00004cce        0x2 
+ .text.bt_l2cap_recv
+                0x00004cd0       0x8c subsys/built-in.o
+                0x00004cd0                bt_l2cap_recv
+ .text.bt_l2cap_update_conn_param
+                0x00004d5c       0x6c subsys/built-in.o
+                0x00004d5c                bt_l2cap_update_conn_param
+ .text.bt_l2cap_init
+                0x00004dc8        0xc subsys/built-in.o
+                0x00004dc8                bt_l2cap_init
+ .text.att_exec_write_req
+                0x00004dd4        0x4 subsys/built-in.o
+ .text.att_op_get_type
+                0x00004dd8       0x30 subsys/built-in.o
+ .text.att_req_destroy
+                0x00004e08       0x22 subsys/built-in.o
+ .text.att_notify
+                0x00004e2a        0xe subsys/built-in.o
+ .text.read_group_cb
+                0x00004e38       0xd2 subsys/built-in.o
+ .text.find_info_cb
+                0x00004f0a       0x9e subsys/built-in.o
+ .text.find_type_cb
+                0x00004fa8       0xa4 subsys/built-in.o
+ .text.bt_att_connected
+                0x0000504c       0x2c subsys/built-in.o
+ .text.check_perm
+                0x00005078       0x50 subsys/built-in.o
+ .text.read_type_cb
+                0x000050c8       0xc4 subsys/built-in.o
+ .text.att_cb.isra.4
+                0x0000518c       0x24 subsys/built-in.o
+ .text.uuid_create
+                0x000051b0       0x34 subsys/built-in.o
+ .text.att_req_sent
+                0x000051e4       0x30 subsys/built-in.o
+ .text.bt_att_accept
+                0x00005214       0x78 subsys/built-in.o
+ .text.att_is_connected
+                0x0000528c       0x24 subsys/built-in.o
+ .text.att_send_req
+                0x000052b0       0x8c subsys/built-in.o
+ .text.att_handle_rsp
+                0x0000533c       0xa4 subsys/built-in.o
+ .text.att_confirm
+                0x000053e0        0xa subsys/built-in.o
+ .text.att_handle_exec_write_rsp
+                0x000053ea        0x4 subsys/built-in.o
+ .text.att_handle_prepare_write_rsp
+                0x000053ee        0x4 subsys/built-in.o
+ .text.att_handle_write_rsp
+                0x000053f2        0x4 subsys/built-in.o
+ .text.att_handle_read_mult_rsp
+                0x000053f6        0x4 subsys/built-in.o
+ .text.att_handle_read_blob_rsp
+                0x000053fa        0x4 subsys/built-in.o
+ .text.att_handle_read_rsp
+                0x000053fe        0x4 subsys/built-in.o
+ .text.att_handle_read_type_rsp
+                0x00005402        0x4 subsys/built-in.o
+ .text.att_handle_find_type_rsp
+                0x00005406        0x4 subsys/built-in.o
+ .text.att_handle_find_info_rsp
+                0x0000540a        0x4 subsys/built-in.o
+ .text.att_mtu_rsp
+                0x0000540e       0x30 subsys/built-in.o
+ .text.att_error_rsp
+                0x0000543e       0x70 subsys/built-in.o
+ .text.att_reset
+                0x000054ae       0x7c subsys/built-in.o
+ .text.bt_att_disconnected
+                0x0000552a       0x1c subsys/built-in.o
+ *fill*         0x00005546        0x2 
+ .text.att_timeout
+                0x00005548       0x4c subsys/built-in.o
+ .text.bt_att_encrypt_change
+                0x00005594       0x9c subsys/built-in.o
+ .text.att_prepare_write_req
+                0x00005630        0x4 subsys/built-in.o
+ .text.att_pdu_sent
+                0x00005634       0x12 subsys/built-in.o
+ .text.att_rsp_sent
+                0x00005646       0x2e subsys/built-in.o
+ .text.att_cfm_sent
+                0x00005674       0x2e subsys/built-in.o
+ *fill*         0x000056a2        0x2 
+ .text.att_chan_get
+                0x000056a4       0x94 subsys/built-in.o
+ .text.write_cb
+                0x00005738       0x5a subsys/built-in.o
+ .text.read_cb  0x00005792       0x78 subsys/built-in.o
+ *fill*         0x0000580a        0x2 
+ .text.bt_att_create_pdu
+                0x0000580c       0x68 subsys/built-in.o
+                0x0000580c                bt_att_create_pdu
+ .text.att_indicate
+                0x00005874       0x2c subsys/built-in.o
+ .text.att_mtu_req
+                0x000058a0       0x60 subsys/built-in.o
+ .text.send_err_rsp.part.8
+                0x00005900       0x44 subsys/built-in.o
+ .text.bt_att_recv
+                0x00005944      0x174 subsys/built-in.o
+ .text.att_read_group_req
+                0x00005ab8      0x108 subsys/built-in.o
+ .text.att_read_mult_req
+                0x00005bc0       0x88 subsys/built-in.o
+ .text.att_read_rsp
+                0x00005c48       0x90 subsys/built-in.o
+ .text.att_read_blob_req
+                0x00005cd8       0x18 subsys/built-in.o
+ .text.att_read_req
+                0x00005cf0       0x18 subsys/built-in.o
+ .text.att_read_type_req
+                0x00005d08       0xd8 subsys/built-in.o
+ .text.att_find_type_req
+                0x00005de0       0xc0 subsys/built-in.o
+ .text.att_find_info_req
+                0x00005ea0       0x88 subsys/built-in.o
+ .text.att_write_rsp.part.9.constprop.13
+                0x00005f28       0xb0 subsys/built-in.o
+ .text.att_signed_write_cmd
+                0x00005fd8       0x90 subsys/built-in.o
+ .text.att_write_req
+                0x00006068       0x2c subsys/built-in.o
+ .text.att_write_cmd
+                0x00006094       0x2c subsys/built-in.o
+ .text.bt_att_init
+                0x000060c0       0x14 subsys/built-in.o
+                0x000060c0                bt_att_init
+ .text.bt_att_req_send
+                0x000060d4       0x4a subsys/built-in.o
+                0x000060d4                bt_att_req_send
+ .text.sc_ccc_cfg_changed
+                0x0000611e        0x2 subsys/built-in.o
+ .text.find_next
+                0x00006120        0x6 subsys/built-in.o
+ .text.gatt_ccc_changed
+                0x00006126       0x34 subsys/built-in.o
+ .text.gatt_indicate_rsp
+                0x0000615a       0x10 subsys/built-in.o
+ *fill*         0x0000616a        0x2 
+ .text.sc_indicate_rsp
+                0x0000616c        0xc subsys/built-in.o
+ .text.bt_gatt_attr_write_ccc
+                0x00006178       0xe8 subsys/built-in.o
+                0x00006178                bt_gatt_attr_write_ccc
+ .text.connected_cb
+                0x00006260       0x50 subsys/built-in.o
+ .text.gatt_register
+                0x000062b0       0xa4 subsys/built-in.o
+ .text.gatt_notify
+                0x00006354       0x84 subsys/built-in.o
+ .text.gatt_indicate
+                0x000063d8       0xc0 subsys/built-in.o
+ .text.notify_cb
+                0x00006498       0xc0 subsys/built-in.o
+ .text.disconnected_cb
+                0x00006558       0xa8 subsys/built-in.o
+ .text.bt_gatt_init
+                0x00006600       0x1c subsys/built-in.o
+                0x00006600                bt_gatt_init
+ .text.bt_gatt_attr_read
+                0x0000661c       0x2e subsys/built-in.o
+                0x0000661c                bt_gatt_attr_read
+ .text.read_appearance
+                0x0000664a       0x22 subsys/built-in.o
+ .text.read_name
+                0x0000666c       0x38 subsys/built-in.o
+ .text.bt_gatt_attr_read_service
+                0x000066a4       0x2e subsys/built-in.o
+                0x000066a4                bt_gatt_attr_read_service
+ .text.bt_gatt_attr_read_ccc
+                0x000066d2       0x68 subsys/built-in.o
+                0x000066d2                bt_gatt_attr_read_ccc
+ *fill*         0x0000673a        0x2 
+ .text.bt_gatt_foreach_attr
+                0x0000673c       0x54 subsys/built-in.o
+                0x0000673c                bt_gatt_foreach_attr
+ .text.bt_gatt_indicate.part.9
+                0x00006790       0x2c subsys/built-in.o
+ .text.sc_indicate.isra.10
+                0x000067bc       0x58 subsys/built-in.o
+ .text.bt_gatt_service_register
+                0x00006814       0x60 subsys/built-in.o
+                0x00006814                bt_gatt_service_register
+ .text.bt_gatt_attr_next
+                0x00006874       0x24 subsys/built-in.o
+                0x00006874                bt_gatt_attr_next
+ .text.bt_gatt_attr_read_chrc
+                0x00006898       0x9c subsys/built-in.o
+                0x00006898                bt_gatt_attr_read_chrc
+ .text.bt_gatt_notify
+                0x00006934       0x40 subsys/built-in.o
+                0x00006934                bt_gatt_notify
+ .text.bt_gatt_connected
+                0x00006974       0x14 subsys/built-in.o
+                0x00006974                bt_gatt_connected
+ .text.bt_gatt_disconnected
+                0x00006988       0x14 subsys/built-in.o
+                0x00006988                bt_gatt_disconnected
+ .text.sys_memcpy_swap
+                0x0000699c       0x18 subsys/built-in.o
+ .text.get_io_capa
+                0x000069b4       0x4c subsys/built-in.o
+ .text.smp_security_request
+                0x00006a00        0x4 subsys/built-in.o
+ .text.bt_smp_accept
+                0x00006a04       0x54 subsys/built-in.o
+ .text.atomic_set_bit
+                0x00006a58       0x28 subsys/built-in.o
+ .text.bt_smp_aes_cmac
+                0x00006a80       0x3c subsys/built-in.o
+ .text.bt_smp_disconnected
+                0x00006abc       0x3c subsys/built-in.o
+ .text.smp_ident_info
+                0x00006af8       0x74 subsys/built-in.o
+ .text.smp_encrypt_info
+                0x00006b6c       0x74 subsys/built-in.o
+ .text.smp_chan_get
+                0x00006be0       0x40 subsys/built-in.o
+ .text.smp_create_pdu.isra.2
+                0x00006c20       0x1c subsys/built-in.o
+ .text.sys_mem_swap.constprop.13
+                0x00006c3c       0x1c subsys/built-in.o
+ .text.smp_f6   0x00006c58       0x96 subsys/built-in.o
+ .text.smp_f4   0x00006cee       0x48 subsys/built-in.o
+ *fill*         0x00006d36        0x2 
+ .text.smp_send
+                0x00006d38       0x28 subsys/built-in.o
+ .text.compute_and_check_and_send_slave_dhcheck
+                0x00006d60      0x19c subsys/built-in.o
+ .text.send_pairing_rsp
+                0x00006efc       0x32 subsys/built-in.o
+ *fill*         0x00006f2e        0x2 
+ .text.smp_pairing_req
+                0x00006f30      0x2d4 subsys/built-in.o
+ .text.sc_send_public_key
+                0x00007204       0x44 subsys/built-in.o
+ .text.smp_send_pairing_random
+                0x00007248       0x32 subsys/built-in.o
+ .text.smp_pairing_rsp
+                0x0000727a        0x4 subsys/built-in.o
+ .text.smp_signing_info
+                0x0000727e        0x4 subsys/built-in.o
+ .text.atomic_test_and_clear_bit
+                0x00007282       0x36 subsys/built-in.o
+ .text.smp_reset
+                0x000072b8       0x56 subsys/built-in.o
+ .text.smp_error
+                0x0000730e       0x34 subsys/built-in.o
+ *fill*         0x00007342        0x2 
+ .text.bt_smp_dhkey_ready
+                0x00007344       0x6c subsys/built-in.o
+ .text.bt_smp_recv
+                0x000073b0      0x120 subsys/built-in.o
+ .text.smp_pairing_failed
+                0x000074d0       0x74 subsys/built-in.o
+ .text.smp_timeout
+                0x00007544       0x60 subsys/built-in.o
+ .text.bt_smp_encrypt_change
+                0x000075a4      0x1fc subsys/built-in.o
+ .text.smp_master_ident
+                0x000077a0       0xb4 subsys/built-in.o
+ .text.bt_smp_connected
+                0x00007854       0x1c subsys/built-in.o
+ .text.ident_sent
+                0x00007870       0x30 subsys/built-in.o
+ .text.smp_dhkey_check
+                0x000078a0       0x60 subsys/built-in.o
+ .text.smp_send_pairing_confirm
+                0x00007900       0x90 subsys/built-in.o
+ .text.smp_public_key_slave.part.7
+                0x00007990       0xa8 subsys/built-in.o
+ .text.bt_smp_pkey_ready
+                0x00007a38       0x84 subsys/built-in.o
+ .text.smp_public_key
+                0x00007abc       0x90 subsys/built-in.o
+ .text.smp_c1   0x00007b4c       0xaa subsys/built-in.o
+ .text.legacy_pairing_confirm
+                0x00007bf6       0x96 subsys/built-in.o
+ .text.smp_pairing_confirm
+                0x00007c8c       0x62 subsys/built-in.o
+ *fill*         0x00007cee        0x2 
+ .text.smp_pairing_random
+                0x00007cf0      0x1d0 subsys/built-in.o
+ .text.smp_ident_addr_info
+                0x00007ec0      0x130 subsys/built-in.o
+ .text.bt_smp_send_security_req
+                0x00007ff0       0xcc subsys/built-in.o
+                0x00007ff0                bt_smp_send_security_req
+ .text.bt_smp_sign_verify
+                0x000080bc        0x6 subsys/built-in.o
+                0x000080bc                bt_smp_sign_verify
+ *fill*         0x000080c2        0x2 
+ .text.bt_smp_update_keys
+                0x000080c4      0x100 subsys/built-in.o
+                0x000080c4                bt_smp_update_keys
+ .text.bt_smp_get_tk
+                0x000081c4       0x4a subsys/built-in.o
+                0x000081c4                bt_smp_get_tk
+ *fill*         0x0000820e        0x2 
+ .text.bt_smp_init
+                0x00008210       0x38 subsys/built-in.o
+                0x00008210                bt_smp_init
+ .text.bt_keys_get_addr
+                0x00008248       0x3c subsys/built-in.o
+                0x00008248                bt_keys_get_addr
+ .text.bt_keys_find
+                0x00008284       0x24 subsys/built-in.o
+                0x00008284                bt_keys_find
+ .text.bt_keys_get_type
+                0x000082a8       0x1c subsys/built-in.o
+                0x000082a8                bt_keys_get_type
+ .text.bt_keys_find_irk
+                0x000082c4       0x68 subsys/built-in.o
+                0x000082c4                bt_keys_find_irk
+ .text.bt_keys_find_addr
+                0x0000832c       0x1c subsys/built-in.o
+                0x0000832c                bt_keys_find_addr
+ .text.bt_keys_add_type
+                0x00008348        0x8 subsys/built-in.o
+                0x00008348                bt_keys_add_type
+ .text.bt_keys_clear
+                0x00008350        0x8 subsys/built-in.o
+                0x00008350                bt_keys_clear
+ .text.evt_create
+                0x00008358       0x14 subsys/built-in.o
+ .text.cmd_status
+                0x0000836c       0x34 subsys/built-in.o
+ .text.cmd_complete
+                0x000083a0       0x44 subsys/built-in.o
+ .text.meta_evt
+                0x000083e4       0x2a subsys/built-in.o
+ *fill*         0x0000840e        0x2 
+ .text.encrypt_change
+                0x00008410       0x40 subsys/built-in.o
+ .text.le_remote_feat_complete
+                0x00008450       0x5c subsys/built-in.o
+ .text.bt_addr_le_to_str.constprop.55
+                0x000084ac       0x60 subsys/built-in.o
+ .text.le_adv_ext_report.isra.51
+                0x0000850c       0xf8 subsys/built-in.o
+ .text.sys_get_le64
+                0x00008604        0x8 subsys/built-in.o
+ .text.hci_cmd_handle
+                0x0000860c      0x5e0 subsys/built-in.o
+                0x0000860c                hci_cmd_handle
+ .text.hci_acl_handle
+                0x00008bec       0xe8 subsys/built-in.o
+                0x00008bec                hci_acl_handle
+ .text.hci_acl_encode
+                0x00008cd4       0x88 subsys/built-in.o
+                0x00008cd4                hci_acl_encode
+ .text.hci_evt_encode
+                0x00008d5c      0x58c subsys/built-in.o
+                0x00008d5c                hci_evt_encode
+ .text.hci_num_cmplt_encode
+                0x000092e8       0x28 subsys/built-in.o
+                0x000092e8                hci_num_cmplt_encode
+ .text.hci_get_class
+                0x00009310       0x30 subsys/built-in.o
+                0x00009310                hci_get_class
+ .text.hci_init
+                0x00009340       0x24 subsys/built-in.o
+                0x00009340                hci_init
+ .text._hci_driver_init
+                0x00009364       0x10 subsys/built-in.o
+ .text.recv_thread
+                0x00009374       0xc4 subsys/built-in.o
+ .text.prio_recv_thread
+                0x00009438       0x58 subsys/built-in.o
+ .text.hci_driver_send
+                0x00009490       0x88 subsys/built-in.o
+ .text.hci_driver_open
+                0x00009518       0xa0 subsys/built-in.o
+ .text.mayfly_init
+                0x000095b8       0x48 subsys/built-in.o
+                0x000095b8                mayfly_init
+ .text.mayfly_enable
+                0x00009600       0x50 subsys/built-in.o
+                0x00009600                mayfly_enable
+ .text.mayfly_enqueue
+                0x00009650       0x9c subsys/built-in.o
+                0x00009650                mayfly_enqueue
+ .text.mayfly_run
+                0x000096ec      0x110 subsys/built-in.o
+                0x000096ec                mayfly_run
+ .text.mem_init
+                0x000097fc       0x4e subsys/built-in.o
+                0x000097fc                mem_init
+ .text.mem_acquire
+                0x0000984a       0x34 subsys/built-in.o
+                0x0000984a                mem_acquire
+ .text.mem_release
+                0x0000987e       0x2e subsys/built-in.o
+                0x0000987e                mem_release
+ .text.mem_free_count_get
+                0x000098ac        0xc subsys/built-in.o
+                0x000098ac                mem_free_count_get
+ .text.mem_get  0x000098b8        0x6 subsys/built-in.o
+                0x000098b8                mem_get
+ .text.mem_index_get
+                0x000098be        0xa subsys/built-in.o
+                0x000098be                mem_index_get
+ .text.mem_rcopy
+                0x000098c8       0x14 subsys/built-in.o
+                0x000098c8                mem_rcopy
+ .text.mem_nz   0x000098dc       0x16 subsys/built-in.o
+                0x000098dc                mem_nz
+ .text.memq_init
+                0x000098f2        0x6 subsys/built-in.o
+                0x000098f2                memq_init
+ .text.memq_enqueue
+                0x000098f8        0xe subsys/built-in.o
+                0x000098f8                memq_enqueue
+ .text.memq_peek
+                0x00009906       0x14 subsys/built-in.o
+                0x00009906                memq_peek
+ .text.memq_dequeue
+                0x0000991a       0x1c subsys/built-in.o
+                0x0000991a                memq_dequeue
+ .text.util_ones_count_get
+                0x00009936       0x22 subsys/built-in.o
+                0x00009936                util_ones_count_get
+ .text.cntr_init
+                0x00009958       0x1c subsys/built-in.o
+                0x00009958                cntr_init
+ .text.cntr_start
+                0x00009974       0x20 subsys/built-in.o
+                0x00009974                cntr_start
+ .text.cntr_stop
+                0x00009994       0x60 subsys/built-in.o
+                0x00009994                cntr_stop
+ .text.cntr_cnt_get
+                0x000099f4        0xc subsys/built-in.o
+                0x000099f4                cntr_cnt_get
+ .text.cntr_cmp_set
+                0x00009a00       0x10 subsys/built-in.o
+                0x00009a00                cntr_cmp_set
+ .text.do_ecb   0x00009a10       0x4c subsys/built-in.o
+ .text.ecb_encrypt
+                0x00009a5c       0x42 subsys/built-in.o
+                0x00009a5c                ecb_encrypt
+ *fill*         0x00009a9e        0x2 
+ .text.isr_radio
+                0x00009aa0       0x10 subsys/built-in.o
+                0x00009aa0                isr_radio
+ .text.radio_isr_set
+                0x00009ab0       0x28 subsys/built-in.o
+                0x00009ab0                radio_isr_set
+ .text.radio_reset
+                0x00009ad8       0x1c subsys/built-in.o
+                0x00009ad8                radio_reset
+ .text.radio_phy_set
+                0x00009af4       0x14 subsys/built-in.o
+                0x00009af4                radio_phy_set
+ .text.radio_tx_power_set
+                0x00009b08        0xc subsys/built-in.o
+                0x00009b08                radio_tx_power_set
+ .text.radio_freq_chan_set
+                0x00009b14        0xc subsys/built-in.o
+                0x00009b14                radio_freq_chan_set
+ .text.radio_whiten_iv_set
+                0x00009b20        0xc subsys/built-in.o
+                0x00009b20                radio_whiten_iv_set
+ .text.radio_aa_set
+                0x00009b2c       0x30 subsys/built-in.o
+                0x00009b2c                radio_aa_set
+ .text.radio_pkt_configure
+                0x00009b5c       0x48 subsys/built-in.o
+                0x00009b5c                radio_pkt_configure
+ .text.radio_pkt_rx_set
+                0x00009ba4        0xc subsys/built-in.o
+                0x00009ba4                radio_pkt_rx_set
+ .text.radio_pkt_tx_set
+                0x00009bb0        0xc subsys/built-in.o
+                0x00009bb0                radio_pkt_tx_set
+ .text.radio_tx_ready_delay_get
+                0x00009bbc        0x4 subsys/built-in.o
+                0x00009bbc                radio_tx_ready_delay_get
+ .text.radio_tx_chain_delay_get
+                0x00009bc0        0x4 subsys/built-in.o
+                0x00009bc0                radio_tx_chain_delay_get
+ .text.radio_rx_ready_delay_get
+                0x00009bc4        0x4 subsys/built-in.o
+                0x00009bc4                radio_rx_ready_delay_get
+ .text.radio_rx_chain_delay_get
+                0x00009bc8        0xa subsys/built-in.o
+                0x00009bc8                radio_rx_chain_delay_get
+ *fill*         0x00009bd2        0x2 
+ .text.radio_rx_enable
+                0x00009bd4        0xc subsys/built-in.o
+                0x00009bd4                radio_rx_enable
+ .text.radio_tx_enable
+                0x00009be0        0xc subsys/built-in.o
+                0x00009be0                radio_tx_enable
+ .text.radio_disable
+                0x00009bec       0x14 subsys/built-in.o
+                0x00009bec                radio_disable
+ .text.radio_status_reset
+                0x00009c00       0x20 subsys/built-in.o
+                0x00009c00                radio_status_reset
+ .text.radio_is_ready
+                0x00009c20       0x14 subsys/built-in.o
+                0x00009c20                radio_is_ready
+ .text.radio_is_done
+                0x00009c34       0x14 subsys/built-in.o
+                0x00009c34                radio_is_done
+ .text.radio_is_idle
+                0x00009c48       0x14 subsys/built-in.o
+                0x00009c48                radio_is_idle
+ .text.radio_crc_configure
+                0x00009c5c       0x18 subsys/built-in.o
+                0x00009c5c                radio_crc_configure
+ .text.radio_crc_is_valid
+                0x00009c74       0x14 subsys/built-in.o
+                0x00009c74                radio_crc_is_valid
+ .text.radio_pkt_empty_get
+                0x00009c88        0x8 subsys/built-in.o
+                0x00009c88                radio_pkt_empty_get
+ .text.radio_pkt_scratch_get
+                0x00009c90        0x8 subsys/built-in.o
+                0x00009c90                radio_pkt_scratch_get
+ .text.radio_switch_complete_and_rx
+                0x00009c98       0x10 subsys/built-in.o
+                0x00009c98                radio_switch_complete_and_rx
+ .text.radio_switch_complete_and_tx
+                0x00009ca8       0x10 subsys/built-in.o
+                0x00009ca8                radio_switch_complete_and_tx
+ .text.radio_switch_complete_and_disable
+                0x00009cb8       0x10 subsys/built-in.o
+                0x00009cb8                radio_switch_complete_and_disable
+ .text.radio_rssi_measure
+                0x00009cc8       0x14 subsys/built-in.o
+                0x00009cc8                radio_rssi_measure
+ .text.radio_rssi_get
+                0x00009cdc        0xc subsys/built-in.o
+                0x00009cdc                radio_rssi_get
+ .text.radio_rssi_status_reset
+                0x00009ce8       0x10 subsys/built-in.o
+                0x00009ce8                radio_rssi_status_reset
+ .text.radio_rssi_is_ready
+                0x00009cf8       0x14 subsys/built-in.o
+                0x00009cf8                radio_rssi_is_ready
+ .text.radio_filter_configure
+                0x00009d0c       0x34 subsys/built-in.o
+                0x00009d0c                radio_filter_configure
+ .text.radio_filter_disable
+                0x00009d40       0x14 subsys/built-in.o
+                0x00009d40                radio_filter_disable
+ .text.radio_filter_status_reset
+                0x00009d54       0x14 subsys/built-in.o
+                0x00009d54                radio_filter_status_reset
+ .text.radio_filter_has_match
+                0x00009d68       0x14 subsys/built-in.o
+                0x00009d68                radio_filter_has_match
+ .text.radio_bc_configure
+                0x00009d7c       0x18 subsys/built-in.o
+                0x00009d7c                radio_bc_configure
+ .text.radio_tmr_status_reset
+                0x00009d94       0x1c subsys/built-in.o
+                0x00009d94                radio_tmr_status_reset
+ .text.radio_tmr_tifs_set
+                0x00009db0        0xc subsys/built-in.o
+                0x00009db0                radio_tmr_tifs_set
+ .text.radio_tmr_start
+                0x00009dbc       0xb0 subsys/built-in.o
+                0x00009dbc                radio_tmr_start
+ .text.radio_tmr_stop
+                0x00009e6c       0x10 subsys/built-in.o
+                0x00009e6c                radio_tmr_stop
+ .text.radio_tmr_hcto_configure
+                0x00009e7c       0x44 subsys/built-in.o
+                0x00009e7c                radio_tmr_hcto_configure
+ .text.radio_tmr_aa_capture
+                0x00009ec0       0x38 subsys/built-in.o
+                0x00009ec0                radio_tmr_aa_capture
+ .text.radio_tmr_aa_get
+                0x00009ef8       0x14 subsys/built-in.o
+                0x00009ef8                radio_tmr_aa_get
+ .text.radio_tmr_end_capture
+                0x00009f0c       0x24 subsys/built-in.o
+                0x00009f0c                radio_tmr_end_capture
+ .text.radio_tmr_end_get
+                0x00009f30        0xc subsys/built-in.o
+                0x00009f30                radio_tmr_end_get
+ .text.radio_ccm_rx_pkt_set
+                0x00009f3c       0x70 subsys/built-in.o
+                0x00009f3c                radio_ccm_rx_pkt_set
+ .text.radio_ccm_tx_pkt_set
+                0x00009fac       0x50 subsys/built-in.o
+                0x00009fac                radio_ccm_tx_pkt_set
+ .text.radio_ccm_is_done
+                0x00009ffc       0x3c subsys/built-in.o
+                0x00009ffc                radio_ccm_is_done
+ .text.radio_ccm_mic_is_valid
+                0x0000a038       0x14 subsys/built-in.o
+                0x0000a038                radio_ccm_mic_is_valid
+ .text.radio_ar_configure
+                0x0000a04c       0x4c subsys/built-in.o
+                0x0000a04c                radio_ar_configure
+ .text.radio_ar_match_get
+                0x0000a098        0xc subsys/built-in.o
+                0x0000a098                radio_ar_match_get
+ .text.radio_ar_status_reset
+                0x0000a0a4       0x28 subsys/built-in.o
+                0x0000a0a4                radio_ar_status_reset
+ .text.radio_ar_has_match
+                0x0000a0cc       0x24 subsys/built-in.o
+                0x0000a0cc                radio_ar_has_match
+ .text.rand_init
+                0x0000a0f0       0x6c subsys/built-in.o
+                0x0000a0f0                rand_init
+ .text.rand_get
+                0x0000a15c       0x64 subsys/built-in.o
+                0x0000a15c                rand_get
+ .text.isr_rand
+                0x0000a1c0       0x5c subsys/built-in.o
+                0x0000a1c0                isr_rand
+ .text.ticker_dequeue
+                0x0000a21c       0x58 subsys/built-in.o
+ .text.prepare_ticks_to_expire
+                0x0000a274       0x46 subsys/built-in.o
+ .text.ticker_instance1_cmp_set
+                0x0000a2ba        0x8 subsys/built-in.o
+ .text.ticker_instance0_cmp_set
+                0x0000a2c2        0x8 subsys/built-in.o
+ *fill*         0x0000a2ca        0x2 
+ .text.ticker_instance1_sched
+                0x0000a2cc       0x94 subsys/built-in.o
+ .text.ticker_instance0_sched
+                0x0000a360       0xa0 subsys/built-in.o
+ .text.ticker_instance1_caller_id_get
+                0x0000a400       0x48 subsys/built-in.o
+ .text.ticker_instance0_caller_id_get
+                0x0000a448       0x50 subsys/built-in.o
+ .text.ticker_worker
+                0x0000a498       0xac subsys/built-in.o
+ .text.ticker_job
+                0x0000a544      0x78c subsys/built-in.o
+ .text.ticker_init
+                0x0000acd0       0xac subsys/built-in.o
+                0x0000acd0                ticker_init
+ .text.ticker_trigger
+                0x0000ad7c       0x1c subsys/built-in.o
+                0x0000ad7c                ticker_trigger
+ .text.ticker_start
+                0x0000ad98       0x90 subsys/built-in.o
+                0x0000ad98                ticker_start
+ .text.ticker_update
+                0x0000ae28       0x8c subsys/built-in.o
+                0x0000ae28                ticker_update
+ .text.ticker_stop
+                0x0000aeb4       0x6c subsys/built-in.o
+                0x0000aeb4                ticker_stop
+ .text.ticker_next_slot_get
+                0x0000af20       0x7c subsys/built-in.o
+                0x0000af20                ticker_next_slot_get
+ .text.ticker_job_idle_get
+                0x0000af9c       0x6c subsys/built-in.o
+                0x0000af9c                ticker_job_idle_get
+ .text.ticker_job_sched
+                0x0000b008       0x24 subsys/built-in.o
+                0x0000b008                ticker_job_sched
+ .text.ticker_ticks_now_get
+                0x0000b02c        0x4 subsys/built-in.o
+                0x0000b02c                ticker_ticks_now_get
+ .text.ticker_ticks_diff_get
+                0x0000b030        0x8 subsys/built-in.o
+                0x0000b030                ticker_ticks_diff_get
+ .text.bt_rand  0x0000b038       0x34 subsys/built-in.o
+                0x0000b038                bt_rand
+ .text.bt_encrypt_le
+                0x0000b06c        0xc subsys/built-in.o
+                0x0000b06c                bt_encrypt_le
+ .text.cpu_sleep
+                0x0000b078        0x8 subsys/built-in.o
+ .text.ticker_if_done
+                0x0000b080        0x4 subsys/built-in.o
+ .text.prepare_reduced
+                0x0000b084        0xc subsys/built-in.o
+ .text.prepare_normal
+                0x0000b090        0xc subsys/built-in.o
+ .text.chan_sel_remap
+                0x0000b09c       0x36 subsys/built-in.o
+ *fill*         0x0000b0d2        0x2 
+ .text.packet_rx_acquired_count_get
+                0x0000b0d4       0x2c subsys/built-in.o
+ .text.packet_rx_reserve_get
+                0x0000b100       0x28 subsys/built-in.o
+ .text.packet_rx_allocate
+                0x0000b128       0x8c subsys/built-in.o
+ .text.common_init
+                0x0000b1b4      0x114 subsys/built-in.o
+ .text.tx_cmplt_get
+                0x0000b2c8       0x9c subsys/built-in.o
+ .text.connection_get
+                0x0000b364       0x2c subsys/built-in.o
+ .text.role_disable
+                0x0000b390      0x29c subsys/built-in.o
+ .text.mayfly_xtal_retain
+                0x0000b62c       0xb0 subsys/built-in.o
+ .text.rx_packet_set
+                0x0000b6dc       0x56 subsys/built-in.o
+ *fill*         0x0000b732        0x2 
+ .text.prepare_pdu_data_tx
+                0x0000b734      0x110 subsys/built-in.o
+ .text.tx_packet_set
+                0x0000b844       0x56 subsys/built-in.o
+ *fill*         0x0000b89a        0x2 
+ .text.packet_rx_enqueue
+                0x0000b89c       0xa0 subsys/built-in.o
+ .text.rx_fc_lock
+                0x0000b93c       0x34 subsys/built-in.o
+ .text.ticker_success_assert
+                0x0000b970       0x44 subsys/built-in.o
+ .text.ticker_stop_adv_assert
+                0x0000b9b4       0x58 subsys/built-in.o
+ .text.ticker_stop_scan_assert
+                0x0000ba0c       0x58 subsys/built-in.o
+ .text.ticker_update_adv_assert
+                0x0000ba64       0x50 subsys/built-in.o
+ .text.ticker_update_slave_assert
+                0x0000bab4       0x50 subsys/built-in.o
+ .text.ticker_op_latency_cancelled
+                0x0000bb04       0x50 subsys/built-in.o
+ .text.ticker_job_disable
+                0x0000bb54       0x18 subsys/built-in.o
+ .text.event_stop
+                0x0000bb6c       0x58 subsys/built-in.o
+ .text.event_adv_stop
+                0x0000bbc4       0xa4 subsys/built-in.o
+                0x0000bbc4                event_adv_stop
+ .text.event_active
+                0x0000bc68       0x54 subsys/built-in.o
+ .text.event_xtal
+                0x0000bcbc       0x54 subsys/built-in.o
+ .text.mayfly_radio_active
+                0x0000bd10       0x68 subsys/built-in.o
+ .text.mayfly_radio_inactive
+                0x0000bd78        0x6 subsys/built-in.o
+ *fill*         0x0000bd7e        0x2 
+ .text.mayfly_radio_stop
+                0x0000bd80       0x6c subsys/built-in.o
+ .text.pdu_node_tx_release
+                0x0000bdec       0x80 subsys/built-in.o
+ .text.packet_tx_enqueue
+                0x0000be6c       0xa4 subsys/built-in.o
+ .text.event_common_prepare
+                0x0000bf10      0x1b8 subsys/built-in.o
+ .text.connection_release
+                0x0000c0c8      0x140 subsys/built-in.o
+ .text.chan_set
+                0x0000c208       0x74 subsys/built-in.o
+ .text.adv_setup
+                0x0000c27c       0xd0 subsys/built-in.o
+ .text.isr_rx_scan_report
+                0x0000c34c       0x98 subsys/built-in.o
+ *fill*         0x0000c3e4        0x4 
+ .text.isr_rx_scan
+                0x0000c3e8      0x5b8 subsys/built-in.o
+ .text.terminate_ind_rx_enqueue
+                0x0000c9a0       0x90 subsys/built-in.o
+ .text.prepare_normal_set
+                0x0000ca30       0x7c subsys/built-in.o
+ .text.preempt_calc
+                0x0000caac       0x3e subsys/built-in.o
+ *fill*         0x0000caea        0x2 
+ .text.mayfly_xtal_stop_calc
+                0x0000caec      0x164 subsys/built-in.o
+ .text.radio_event_adv_prepare
+                0x0000cc50       0x6c subsys/built-in.o
+                0x0000cc50                radio_event_adv_prepare
+ .text.adv_scan_configure.constprop.29
+                0x0000ccbc       0x54 subsys/built-in.o
+ .text.event_adv
+                0x0000cd10      0x10c subsys/built-in.o
+ .text.mayfly_xtal_start
+                0x0000ce1c       0x10 subsys/built-in.o
+ .text.mayfly_xtal_stop
+                0x0000ce2c       0x10 subsys/built-in.o
+ .text.chan_sel_2
+                0x0000ce3c       0x88 subsys/built-in.o
+ .text.connection_configure
+                0x0000cec4       0x3c subsys/built-in.o
+ .text.event_slave
+                0x0000cf00      0x1e4 subsys/built-in.o
+ .text.ctrl_tx_enqueue
+                0x0000d0e4       0x72 subsys/built-in.o
+ *fill*         0x0000d156        0x2 
+ .text.start_enc_rsp_send
+                0x0000d158       0x78 subsys/built-in.o
+ .text.pause_enc_rsp_send
+                0x0000d1d0       0x68 subsys/built-in.o
+ .text.reject_ind_ext_send
+                0x0000d238       0x70 subsys/built-in.o
+ .text.event_connection_prepare
+                0x0000d2a8     0x1024 subsys/built-in.o
+ .text.event_master_prepare
+                0x0000e2cc        0x4 subsys/built-in.o
+ .text.event_slave_prepare
+                0x0000e2d0        0x4 subsys/built-in.o
+ .text.event_master
+                0x0000e2d4      0x19c subsys/built-in.o
+ .text.isr      0x0000e470     0x1c4c subsys/built-in.o
+ .text.radio_init
+                0x000100bc       0xf0 subsys/built-in.o
+                0x000100bc                radio_init
+ .text.ll_reset
+                0x000101ac       0x9c subsys/built-in.o
+                0x000101ac                ll_reset
+ .text.radio_adv_data_get
+                0x00010248        0x8 subsys/built-in.o
+                0x00010248                radio_adv_data_get
+ .text.radio_scan_data_get
+                0x00010250        0x8 subsys/built-in.o
+                0x00010250                radio_scan_data_get
+ .text.radio_adv_is_enabled
+                0x00010258       0x10 subsys/built-in.o
+                0x00010258                radio_adv_is_enabled
+ .text.radio_adv_filter_pol_get
+                0x00010268       0x18 subsys/built-in.o
+                0x00010268                radio_adv_filter_pol_get
+ .text.radio_scan_is_enabled
+                0x00010280       0x10 subsys/built-in.o
+                0x00010280                radio_scan_is_enabled
+ .text.radio_scan_filter_pol_get
+                0x00010290       0x1c subsys/built-in.o
+                0x00010290                radio_scan_filter_pol_get
+ .text.ll_conn_update
+                0x000102ac       0x74 subsys/built-in.o
+                0x000102ac                ll_conn_update
+ .text.ll_start_enc_req_send
+                0x00010320       0x84 subsys/built-in.o
+                0x00010320                ll_start_enc_req_send
+ .text.ll_feature_req_send
+                0x000103a4       0x28 subsys/built-in.o
+                0x000103a4                ll_feature_req_send
+ .text.ll_version_ind_send
+                0x000103cc       0x28 subsys/built-in.o
+                0x000103cc                ll_version_ind_send
+ .text.ll_terminate_ind_send
+                0x000103f4       0x28 subsys/built-in.o
+                0x000103f4                ll_terminate_ind_send
+ .text.ll_length_req_send
+                0x0001041c       0x40 subsys/built-in.o
+                0x0001041c                ll_length_req_send
+ .text.ll_length_default_get
+                0x0001045c       0x14 subsys/built-in.o
+                0x0001045c                ll_length_default_get
+ .text.ll_length_default_set
+                0x00010470       0x14 subsys/built-in.o
+                0x00010470                ll_length_default_set
+ .text.ll_length_max_get
+                0x00010484       0x12 subsys/built-in.o
+                0x00010484                ll_length_max_get
+ .text.ll_phy_get
+                0x00010496       0x28 subsys/built-in.o
+                0x00010496                ll_phy_get
+ *fill*         0x000104be        0x2 
+ .text.ll_phy_default_set
+                0x000104c0       0x14 subsys/built-in.o
+                0x000104c0                ll_phy_default_set
+ .text.ll_phy_req_send
+                0x000104d4       0x60 subsys/built-in.o
+                0x000104d4                ll_phy_req_send
+ .text.radio_rx_get
+                0x00010534       0x78 subsys/built-in.o
+                0x00010534                radio_rx_get
+ .text.radio_rx_mem_release
+                0x000105ac       0x90 subsys/built-in.o
+                0x000105ac                radio_rx_mem_release
+ .text.do_radio_rx_fc_set
+                0x0001063c       0x60 subsys/built-in.o
+                0x0001063c                do_radio_rx_fc_set
+ .text.radio_rx_fc_set
+                0x0001069c       0x58 subsys/built-in.o
+                0x0001069c                radio_rx_fc_set
+ .text.radio_tx_mem_acquire
+                0x000106f4        0xc subsys/built-in.o
+                0x000106f4                radio_tx_mem_acquire
+ .text.radio_tx_mem_release
+                0x00010700        0xc subsys/built-in.o
+                0x00010700                radio_tx_mem_release
+ .text.radio_tx_mem_enqueue
+                0x0001070c       0xfc subsys/built-in.o
+                0x0001070c                radio_tx_mem_enqueue
+ .text.ll_adv_scan_state_cb
+                0x00010808       0x34 subsys/built-in.o
+                0x0001080c                ll_adv_scan_state_cb
+ *fill*         0x0001083c        0x4 
+ .text.radio_adv_enable
+                0x00010840      0x2fc subsys/built-in.o
+                0x00010840                radio_adv_enable
+ .text.radio_adv_disable
+                0x00010b3c       0x58 subsys/built-in.o
+                0x00010b3c                radio_adv_disable
+ .text.radio_rx_dequeue
+                0x00010b94      0x164 subsys/built-in.o
+                0x00010b94                radio_rx_dequeue
+ .text.rtc0_nrf5_isr
+                0x00010cf8       0x38 subsys/built-in.o
+ .text.swi4_nrf5_isr
+                0x00010d30        0x6 subsys/built-in.o
+ .text.rng_nrf5_isr
+                0x00010d36        0x4 subsys/built-in.o
+ .text.radio_nrf5_isr
+                0x00010d3a       0x1e subsys/built-in.o
+                0x00010d3a                radio_nrf5_isr
+ .text.mayfly_enable_cb
+                0x00010d58       0x58 subsys/built-in.o
+                0x00010d58                mayfly_enable_cb
+ .text.mayfly_is_enabled
+                0x00010db0       0x50 subsys/built-in.o
+                0x00010db0                mayfly_is_enabled
+ .text.mayfly_prio_is_equal
+                0x00010e00       0x22 subsys/built-in.o
+                0x00010e00                mayfly_prio_is_equal
+ *fill*         0x00010e22        0x2 
+ .text.mayfly_pend
+                0x00010e24       0x5c subsys/built-in.o
+                0x00010e24                mayfly_pend
+ .text.radio_active_callback
+                0x00010e80        0x2 subsys/built-in.o
+                0x00010e80                radio_active_callback
+ *fill*         0x00010e82        0x2 
+ .text.radio_event_callback
+                0x00010e84        0xc subsys/built-in.o
+                0x00010e84                radio_event_callback
+ .text.ll_init  0x00010e90      0x120 subsys/built-in.o
+                0x00010e90                ll_init
+ .text.ll_addr_get
+                0x00010fb0       0x34 subsys/built-in.o
+                0x00010fb0                ll_addr_get
+ .text.ll_addr_set
+                0x00010fe4       0x18 subsys/built-in.o
+                0x00010fe4                ll_addr_set
+ .text.rl_access_check.constprop.1
+                0x00010ffc       0x18 subsys/built-in.o
+ .text.ctrl_filter_get
+                0x00011014        0x8 subsys/built-in.o
+                0x00011014                ctrl_filter_get
+ .text.ll_wl_size_get
+                0x0001101c        0x4 subsys/built-in.o
+                0x0001101c                ll_wl_size_get
+ .text.ll_wl_clear
+                0x00011020       0x2c subsys/built-in.o
+                0x00011020                ll_wl_clear
+ .text.ll_wl_add
+                0x0001104c       0x70 subsys/built-in.o
+                0x0001104c                ll_wl_add
+ .text.ll_wl_remove
+                0x000110bc       0x98 subsys/built-in.o
+                0x000110bc                ll_wl_remove
+ .text.ll_rl_idx_find
+                0x00011154       0x48 subsys/built-in.o
+                0x00011154                ll_rl_idx_find
+ .text.ctrl_rl_enabled
+                0x0001119c       0x10 subsys/built-in.o
+                0x0001119c                ctrl_rl_enabled
+ .text.ll_rl_pdu_adv_update
+                0x000111ac       0xdc subsys/built-in.o
+                0x000111ac                ll_rl_pdu_adv_update
+ .text.ll_rl_rpa_update
+                0x00011288      0x1b0 subsys/built-in.o
+                0x00011288                ll_rl_rpa_update
+ .text.rpa_timeout
+                0x00011438       0x24 subsys/built-in.o
+ .text.ll_rl_size_get
+                0x0001145c        0x4 subsys/built-in.o
+                0x0001145c                ll_rl_size_get
+ .text.ll_rl_clear
+                0x00011460       0x2c subsys/built-in.o
+                0x00011460                ll_rl_clear
+ .text.ll_rl_add
+                0x0001148c       0xd0 subsys/built-in.o
+                0x0001148c                ll_rl_add
+ .text.ll_rl_remove
+                0x0001155c       0x64 subsys/built-in.o
+                0x0001155c                ll_rl_remove
+ .text.ll_rl_prpa_get
+                0x000115c0       0x30 subsys/built-in.o
+                0x000115c0                ll_rl_prpa_get
+ .text.ll_rl_lrpa_get
+                0x000115f0       0x30 subsys/built-in.o
+                0x000115f0                ll_rl_lrpa_get
+ .text.ll_rl_enable
+                0x00011620       0x24 subsys/built-in.o
+                0x00011620                ll_rl_enable
+ .text.ll_rl_timeout_set
+                0x00011644       0x10 subsys/built-in.o
+                0x00011644                ll_rl_timeout_set
+ .text.ll_filter_reset
+                0x00011654       0x74 subsys/built-in.o
+                0x00011654                ll_filter_reset
+ .text.ll_adv_set_get
+                0x000116c8        0x8 subsys/built-in.o
+                0x000116c8                ll_adv_set_get
+ .text.ll_adv_params_set
+                0x000116d0      0x20c subsys/built-in.o
+                0x000116d0                ll_adv_params_set
+ .text.ll_adv_data_set
+                0x000118dc       0xa8 subsys/built-in.o
+                0x000118dc                ll_adv_data_set
+ .text.ll_scan_data_set
+                0x00011984       0x80 subsys/built-in.o
+                0x00011984                ll_scan_data_set
+ .text.ll_adv_enable
+                0x00011a04       0xd4 subsys/built-in.o
+                0x00011a04                ll_adv_enable
+ .text.net_buf_pool_get
+                0x00011ad8       0x10 subsys/built-in.o
+                0x00011ad8                net_buf_pool_get
+ .text.net_buf_alloc
+                0x00011ae8       0x8c subsys/built-in.o
+                0x00011ae8                net_buf_alloc
+ .text.net_buf_get
+                0x00011b74       0x32 subsys/built-in.o
+                0x00011b74                net_buf_get
+ .text.net_buf_reserve
+                0x00011ba6        0xa subsys/built-in.o
+                0x00011ba6                net_buf_reserve
+ .text.net_buf_put
+                0x00011bb0       0x1a subsys/built-in.o
+                0x00011bb0                net_buf_put
+ *fill*         0x00011bca        0x2 
+ .text.net_buf_unref
+                0x00011bcc       0x38 subsys/built-in.o
+                0x00011bcc                net_buf_unref
+ .text.net_buf_ref
+                0x00011c04        0x8 subsys/built-in.o
+                0x00011c04                net_buf_ref
+ .text.net_buf_simple_add
+                0x00011c0c        0xc subsys/built-in.o
+                0x00011c0c                net_buf_simple_add
+ .text.net_buf_simple_add_mem
+                0x00011c18       0x12 subsys/built-in.o
+                0x00011c18                net_buf_simple_add_mem
+ .text.net_buf_simple_add_u8
+                0x00011c2a       0x10 subsys/built-in.o
+                0x00011c2a                net_buf_simple_add_u8
+ .text.net_buf_simple_push
+                0x00011c3a       0x10 subsys/built-in.o
+                0x00011c3a                net_buf_simple_push
+ .text.net_buf_simple_pull
+                0x00011c4a       0x10 subsys/built-in.o
+                0x00011c4a                net_buf_simple_pull
+ .text.net_buf_simple_pull_u8
+                0x00011c5a       0x10 subsys/built-in.o
+                0x00011c5a                net_buf_simple_pull_u8
+ .text.net_buf_simple_pull_le16
+                0x00011c6a       0x10 subsys/built-in.o
+                0x00011c6a                net_buf_simple_pull_le16
+ .text.net_buf_simple_headroom
+                0x00011c7a        0xa subsys/built-in.o
+                0x00011c7a                net_buf_simple_headroom
+ .text.net_buf_simple_tailroom
+                0x00011c84       0x12 subsys/built-in.o
+                0x00011c84                net_buf_simple_tailroom
+ *fill*         0x00011c96        0x2 
+ .text.ftpan_36
+                0x00011c98       0x40 arch/built-in.o
+ .text.nordicsemi_nrf52_init
+                0x00011cd8       0xe8 arch/built-in.o
+ .text._HandlerModeExit
+                0x00011dc0       0x30 arch/built-in.o
+                0x00011dc0                _IntExit
+                0x00011dcc                _ExcExit
+ .text._IntLibInit
+                0x00011df0       0x18 arch/built-in.o
+                0x00011df0                _IntLibInit
+ .text.__pendsv
+                0x00011e08       0x44 arch/built-in.o
+                0x00011e08                __pendsv
+ .text.__svc    0x00011e4c       0x3c arch/built-in.o
+                0x00011e4c                __svc
+ .text.__swap   0x00011e88       0x1c arch/built-in.o
+                0x00011e88                __swap
+ .text._FaultThreadShow.isra.2
+                0x00011ea4       0x1c arch/built-in.o
+ .text._UsageFault
+                0x00011ec0       0x90 arch/built-in.o
+ .text._MpuFault
+                0x00011f50       0x80 arch/built-in.o
+ .text._BusFault
+                0x00011fd0       0x94 arch/built-in.o
+ .text._Fault   0x00012064       0xd0 arch/built-in.o
+                0x00012064                _Fault
+ .text._FaultInit
+                0x00012134       0x10 arch/built-in.o
+                0x00012134                _FaultInit
+ .text._arch_irq_enable
+                0x00012144       0x1c arch/built-in.o
+                0x00012144                _arch_irq_enable
+ .text._arch_irq_disable
+                0x00012160       0x1c arch/built-in.o
+                0x00012160                _arch_irq_disable
+ .text._arch_irq_is_enabled
+                0x0001217c       0x1c arch/built-in.o
+                0x0001217c                _arch_irq_is_enabled
+ .text._irq_priority_set
+                0x00012198       0x30 arch/built-in.o
+                0x00012198                _irq_priority_set
+ .text._irq_spurious
+                0x000121c8        0x4 arch/built-in.o
+                0x000121c8                _irq_spurious
+ .text._arch_isr_direct_pm
+                0x000121cc       0x1c arch/built-in.o
+                0x000121cc                _arch_isr_direct_pm
+ .text._new_thread
+                0x000121e8       0x58 arch/built-in.o
+                0x000121e8                _new_thread
+ .text._CpuIdleInit
+                0x00012240        0xc arch/built-in.o
+                0x00012240                _CpuIdleInit
+ .text.k_cpu_idle
+                0x0001224c        0xc arch/built-in.o
+                0x0001224c                k_cpu_idle
+ .text.__fault  0x00012258       0x28 arch/built-in.o
+                0x00012258                __usage_fault
+                0x00012258                __reserved
+                0x00012258                __bus_fault
+                0x00012258                __debug_monitor
+                0x00012258                __mpu_fault
+                0x00012258                __hard_fault
+ .text._NanoFatalErrorHandler
+                0x00012280       0x64 arch/built-in.o
+                0x00012280                _NanoFatalErrorHandler
+ .text._do_kernel_oops
+                0x000122e4        0x8 arch/built-in.o
+                0x000122e4                _do_kernel_oops
+ .text._SysFatalErrorHandler
+                0x000122ec       0x58 arch/built-in.o
+                0x000122ec                _SysFatalErrorHandler
+ .text.k_thread_abort
+                0x00012344       0x4c arch/built-in.o
+                0x00012344                k_thread_abort
+ .text._isr_wrapper
+                0x00012390       0x3c arch/built-in.o
+                0x00012390                _isr_wrapper
+ .text._reset_section
+                0x000123cc       0x20 arch/built-in.o
+                0x000123cc                __reset
+                0x000123cc                __start
+ .text._SysNmiOnReset
+                0x000123ec        0x8 arch/built-in.o
+                0x000123ec                _SysNmiOnReset
+ .text._PrepC   0x000123f4       0x28 arch/built-in.o
+                0x000123f4                _PrepC
+ .text.__nmi    0x0001241c        0xe arch/built-in.o
+                0x0001241c                __nmi
+ *fill*         0x0001242a        0x2 
+ .text.arm_mpu_init
+                0x0001242c       0x64 arch/built-in.o
+ .text._sys_device_do_config_level
+                0x00012490       0x28 kernel/lib.a(device.o)
+                0x00012490                _sys_device_do_config_level
+ .text.device_get_binding
+                0x000124b8       0x34 kernel/lib.a(device.o)
+                0x000124b8                device_get_binding
+ .text._sys_power_save_idle_exit
+                0x000124ec       0x18 kernel/lib.a(idle.o)
+                0x000124ec                _sys_power_save_idle_exit
+ .text.idle     0x00012504       0x48 kernel/lib.a(idle.o)
+                0x00012504                idle
+ .text.k_call_stacks_analyze
+                0x0001254c        0x2 kernel/lib.a(init.o)
+                0x0001254c                k_call_stacks_analyze
+ *fill*         0x0001254e        0x2 
+ .text._bss_zero
+                0x00012550       0x14 kernel/lib.a(init.o)
+                0x00012550                _bss_zero
+ .text._data_copy
+                0x00012564       0x18 kernel/lib.a(init.o)
+                0x00012564                _data_copy
+ .text._main    0x0001257c       0x28 kernel/lib.a(init.o)
+ .text._Cstart  0x000125a4       0xfc kernel/lib.a(init.o)
+                0x000125a4                _Cstart
+ .text.adjust_owner_prio.isra.6
+                0x000126a0       0x2e kernel/lib.a(mutex.o)
+ *fill*         0x000126ce        0x2 
+ .text.k_mutex_lock
+                0x000126d0       0xc8 kernel/lib.a(mutex.o)
+                0x000126d0                k_mutex_lock
+ .text.k_mutex_unlock
+                0x00012798       0xdc kernel/lib.a(mutex.o)
+                0x00012798                k_mutex_unlock
+ .text.clear_event_registrations
+                0x00012874       0x44 kernel/lib.a(poll.o)
+ .text._signal_poll_event
+                0x000128b8       0xc4 kernel/lib.a(poll.o)
+ .text.k_poll_event_init
+                0x0001297c       0x2a kernel/lib.a(poll.o)
+                0x0001297c                k_poll_event_init
+ *fill*         0x000129a6        0x2 
+ .text.k_poll   0x000129a8      0x1a4 kernel/lib.a(poll.o)
+                0x000129a8                k_poll
+ .text._handle_obj_poll_event
+                0x00012b4c       0x18 kernel/lib.a(poll.o)
+                0x00012b4c                _handle_obj_poll_event
+ .text.k_poll_signal
+                0x00012b64       0x42 kernel/lib.a(poll.o)
+                0x00012b64                k_poll_signal
+ .text._ready_thread
+                0x00012ba6       0x1a kernel/lib.a(queue.o)
+ .text.handle_poll_event
+                0x00012bc0       0x10 kernel/lib.a(queue.o)
+ .text._Swap    0x00012bd0       0x12 kernel/lib.a(queue.o)
+ *fill*         0x00012be2        0x2 
+ .text._must_switch_threads
+                0x00012be4       0x20 kernel/lib.a(queue.o)
+ .text._unpend_first_thread
+                0x00012c04       0x48 kernel/lib.a(queue.o)
+ .text._abort_timeout
+                0x00012c4c       0x30 kernel/lib.a(queue.o)
+ .text.k_queue_init
+                0x00012c7c        0xe kernel/lib.a(queue.o)
+                0x00012c7c                k_queue_init
+ *fill*         0x00012c8a        0x2 
+ .text.k_queue_insert
+                0x00012c8c       0x88 kernel/lib.a(queue.o)
+                0x00012c8c                k_queue_insert
+ .text.k_queue_append
+                0x00012d14        0x8 kernel/lib.a(queue.o)
+                0x00012d14                k_queue_append
+ .text.k_queue_prepend
+                0x00012d1c        0x8 kernel/lib.a(queue.o)
+                0x00012d1c                k_queue_prepend
+ .text.k_queue_append_list
+                0x00012d24       0x90 kernel/lib.a(queue.o)
+                0x00012d24                k_queue_append_list
+ .text.k_queue_get
+                0x00012db4       0x4c kernel/lib.a(queue.o)
+                0x00012db4                k_queue_get
+ .text._add_timeout
+                0x00012e00       0x58 kernel/lib.a(sched.o)
+ .text._add_thread_to_ready_q
+                0x00012e58       0x50 kernel/lib.a(sched.o)
+                0x00012e58                _add_thread_to_ready_q
+ .text._remove_thread_from_ready_q
+                0x00012ea8       0x68 kernel/lib.a(sched.o)
+                0x00012ea8                _remove_thread_from_ready_q
+ .text._pend_thread
+                0x00012f10       0x60 kernel/lib.a(sched.o)
+                0x00012f10                _pend_thread
+ .text._pend_current_thread
+                0x00012f70       0x20 kernel/lib.a(sched.o)
+                0x00012f70                _pend_current_thread
+ .text.__must_switch_threads
+                0x00012f90       0x2c kernel/lib.a(sched.o)
+                0x00012f90                __must_switch_threads
+ .text._reschedule_threads
+                0x00012fbc       0x34 kernel/lib.a(sched.o)
+                0x00012fbc                _reschedule_threads
+ .text.k_sched_unlock
+                0x00012ff0       0x20 kernel/lib.a(sched.o)
+                0x00012ff0                k_sched_unlock
+ .text._move_thread_to_end_of_prio_q
+                0x00013010       0x50 kernel/lib.a(sched.o)
+                0x00013010                _move_thread_to_end_of_prio_q
+ .text.k_yield  0x00013060       0x3c kernel/lib.a(sched.o)
+                0x00013060                k_yield
+ .text.k_sleep  0x0001309c       0x50 kernel/lib.a(sched.o)
+                0x0001309c                k_sleep
+ .text.k_current_get
+                0x000130ec        0xc kernel/lib.a(sched.o)
+                0x000130ec                k_current_get
+ .text._is_thread_time_slicing
+                0x000130f8       0x48 kernel/lib.a(sched.o)
+                0x000130f8                _is_thread_time_slicing
+ .text._update_time_slice_before_swap
+                0x00013140        0xc kernel/lib.a(sched.o)
+                0x00013140                _update_time_slice_before_swap
+ .text._ready_thread
+                0x0001314c       0x1a kernel/lib.a(sem.o)
+ *fill*         0x00013166        0x2 
+ .text._unpend_first_thread
+                0x00013168       0x48 kernel/lib.a(sem.o)
+ .text._abort_timeout
+                0x000131b0       0x30 kernel/lib.a(sem.o)
+ .text.k_sem_init
+                0x000131e0        0xe kernel/lib.a(sem.o)
+                0x000131e0                k_sem_init
+ *fill*         0x000131ee        0x2 
+ .text.k_sem_give
+                0x000131f0       0x84 kernel/lib.a(sem.o)
+                0x000131f0                k_sem_give
+ .text.k_sem_take
+                0x00013274       0x3c kernel/lib.a(sem.o)
+                0x00013274                k_sem_take
+ .text._tick_get
+                0x000132b0       0x1c kernel/lib.a(sys_clock.o)
+                0x000132b0                sys_tick_get
+                0x000132b0                _tick_get
+ .text.k_uptime_get
+                0x000132cc       0x16 kernel/lib.a(sys_clock.o)
+                0x000132cc                k_uptime_get
+ *fill*         0x000132e2        0x2 
+ .text._nano_sys_clock_tick_announce
+                0x000132e4      0x194 kernel/lib.a(sys_clock.o)
+                0x000132e4                _nano_sys_clock_tick_announce
+ .text.k_sys_work_q_init
+                0x00013478       0x20 kernel/lib.a(system_work_q.o)
+ .text._is_thread_ready
+                0x00013498       0x14 kernel/lib.a(thread.o)
+ .text.start_thread
+                0x000134ac       0x4c kernel/lib.a(thread.o)
+ .text._abort_timeout
+                0x000134f8       0x30 kernel/lib.a(thread.o)
+ .text.schedule_new_thread.part.14
+                0x00013528       0x7c kernel/lib.a(thread.o)
+ .text.k_is_in_isr
+                0x000135a4       0x20 kernel/lib.a(thread.o)
+                0x000135a4                k_is_in_isr
+ .text._is_thread_essential
+                0x000135c4       0x10 kernel/lib.a(thread.o)
+                0x000135c4                _is_thread_essential
+ .text._thread_entry
+                0x000135d4       0x2c kernel/lib.a(thread.o)
+                0x000135d4                _thread_entry
+ .text.k_thread_create
+                0x00013600       0x38 kernel/lib.a(thread.o)
+                0x00013600                k_thread_create
+ .text._k_thread_single_abort
+                0x00013638       0x4a kernel/lib.a(thread.o)
+                0x00013638                _k_thread_single_abort
+ *fill*         0x00013682        0x2 
+ .text._init_static_threads
+                0x00013684       0x94 kernel/lib.a(thread.o)
+                0x00013684                _init_static_threads
+ .text._init_thread_base
+                0x00013718       0x18 kernel/lib.a(thread.o)
+                0x00013718                _init_thread_base
+ .text.k_work_submit_to_queue
+                0x00013730       0x30 kernel/lib.a(work_q.o)
+ .text.work_timeout
+                0x00013760       0x14 kernel/lib.a(work_q.o)
+ .text.work_q_main
+                0x00013774       0x3a kernel/lib.a(work_q.o)
+ *fill*         0x000137ae        0x2 
+ .text.k_work_q_start
+                0x000137b0       0x34 kernel/lib.a(work_q.o)
+                0x000137b0                k_work_q_start
+ .text.k_delayed_work_init
+                0x000137e4       0x3c kernel/lib.a(work_q.o)
+                0x000137e4                k_delayed_work_init
+ .text.k_delayed_work_cancel
+                0x00013820       0x70 kernel/lib.a(work_q.o)
+                0x00013820                k_delayed_work_cancel
+ .text.k_delayed_work_submit_to_queue
+                0x00013890       0xb0 kernel/lib.a(work_q.o)
+                0x00013890                k_delayed_work_submit_to_queue
+ .text._OffsetAbsSyms
+                0x00013940        0x2 ./arch/arm/core/offsets/offsets.o
+                0x00013940                _OffsetAbsSyms
+ *(.gnu.linkonce.t.*)
+                0x00013942                _image_text_end = .
+
+.glue_7         0x00013944        0x0
+ .glue_7        0x00013944        0x0 linker stubs
+
+.glue_7t        0x00013944        0x0
+ .glue_7t       0x00013944        0x0 linker stubs
+
+.vfp11_veneer   0x00013944        0x0
+ .vfp11_veneer  0x00013944        0x0 linker stubs
+
+.v4_bx          0x00013944        0x0
+ .v4_bx         0x00013944        0x0 linker stubs
+
+.iplt           0x00013944        0x0
+ .iplt          0x00013944        0x0 isr_tables.o
+
+.igot.plt       0x00013944        0x0
+ .igot.plt      0x00013944        0x0 isr_tables.o
+
+.ARM.exidx      0x00013944        0x8
+                0x00013944                __exidx_start = .
+ *(.ARM.exidx* gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00013944        0x8 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+                0x0001394c                __exidx_end = .
+
+devconfig       0x0001394c       0x78
+                0x0001394c                __devconfig_start = .
+ *(.devconfig.*)
+ .devconfig.init
+                0x0001394c       0x48 drivers/built-in.o
+ .devconfig.init
+                0x00013994        0xc subsys/built-in.o
+ .devconfig.init
+                0x000139a0       0x18 arch/built-in.o
+ .devconfig.init
+                0x000139b8        0xc kernel/lib.a(system_work_q.o)
+ *(SORT(.devconfig*))
+                0x000139c4                __devconfig_end = .
+
+net_l2          0x000139c4        0x0
+                0x000139c4                __net_l2_start = .
+ *(.net_l2.init)
+ *(SORT(.net_l2.init*))
+                0x000139c4                __net_l2_end = .
+
+rodata          0x000139c4     0x3714
+ *(.rodata)
+ .rodata        0x000139c4       0x2c ext/built-in.o
+ .rodata        0x000139f0       0x50 subsys/built-in.o
+ *(.rodata.*)
+ .rodata.str1.1
+                0x00013a40      0x142 src/built-in.o
+ *fill*         0x00013b82        0x2 
+ .rodata.sd     0x00013b84        0x8 src/built-in.o
+ .rodata.ad     0x00013b8c       0x10 src/built-in.o
+ .rodata.str1.1
+                0x00013b9c       0x2e drivers/built-in.o
+                                 0x48 (size before relaxing)
+ *fill*         0x00013bca        0x2 
+ .rodata.uart_nrf5_driver_api
+                0x00013bcc        0xc drivers/built-in.o
+ .rodata.uart_nrf5_dev_cfg_0
+                0x00013bd8        0x8 drivers/built-in.o
+ .rodata.drive_strength.6878
+                0x00013be0       0x40 drivers/built-in.o
+ .rodata.gpio_nrf5_P0_cfg
+                0x00013c20        0xc drivers/built-in.o
+ .rodata.gpio_nrf5_drv_api_funcs
+                0x00013c2c       0x1c drivers/built-in.o
+ .rodata._m16src_clock_control_api
+                0x00013c48        0xc drivers/built-in.o
+ .rodata._k32src_clock_control_api
+                0x00013c54        0xc drivers/built-in.o
+ .rodata.sbox   0x00013c60      0x100 ext/built-in.o
+ .rodata.hex.5724
+                0x00013d60       0x11 subsys/built-in.o
+ .rodata.str1.1
+                0x00013d71     0x21c9 subsys/built-in.o
+                               0x25cb (size before relaxing)
+ .rodata.uuid128_base
+                0x00015f3a       0x11 subsys/built-in.o
+ .rodata.__func__.8879
+                0x00015f4b       0x18 subsys/built-in.o
+ .rodata.__func__.9027
+                0x00015f63        0xf subsys/built-in.o
+ .rodata.__func__.8913
+                0x00015f72        0xf subsys/built-in.o
+ .rodata.__func__.8816
+                0x00015f81       0x11 subsys/built-in.o
+ .rodata.__func__.8783
+                0x00015f92       0x15 subsys/built-in.o
+ .rodata.__func__.9043
+                0x00015fa7        0xe subsys/built-in.o
+ .rodata.__func__.9168
+                0x00015fb5        0x8 subsys/built-in.o
+ .rodata.__func__.8838
+                0x00015fbd       0x13 subsys/built-in.o
+ .rodata.__func__.9010
+                0x00015fd0        0xa subsys/built-in.o
+ .rodata.__func__.8846
+                0x00015fda       0x17 subsys/built-in.o
+ .rodata.__func__.8706
+                0x00015ff1       0x10 subsys/built-in.o
+ .rodata.__func__.9107
+                0x00016001        0x8 subsys/built-in.o
+ .rodata.__func__.8904
+                0x00016009       0x21 subsys/built-in.o
+ .rodata.__func__.9198
+                0x0001602a        0xa subsys/built-in.o
+ .rodata.__func__.9176
+                0x00016034        0xd subsys/built-in.o
+ .rodata.__func__.9272
+                0x00016041        0xf subsys/built-in.o
+ .rodata.__func__.9142
+                0x00016050       0x29 subsys/built-in.o
+ .rodata.__func__.8872
+                0x00016079       0x12 subsys/built-in.o
+ .rodata.__func__.8824
+                0x0001608b       0x18 subsys/built-in.o
+ .rodata.__func__.8759
+                0x000160a3       0x1a subsys/built-in.o
+ .rodata.__func__.9152
+                0x000160bd        0xe subsys/built-in.o
+ .rodata.__func__.8890
+                0x000160cb       0x11 subsys/built-in.o
+ .rodata.__func__.8752
+                0x000160dc        0x8 subsys/built-in.o
+ .rodata.__func__.8993
+                0x000160e4       0x12 subsys/built-in.o
+ .rodata.__func__.8897
+                0x000160f6       0x13 subsys/built-in.o
+ .rodata.__func__.9157
+                0x00016109        0x9 subsys/built-in.o
+ .rodata.__func__.8943
+                0x00016112        0xd subsys/built-in.o
+ .rodata.__func__.9022
+                0x0001611f        0x9 subsys/built-in.o
+ .rodata.__func__.6773
+                0x00016128       0x10 subsys/built-in.o
+ .rodata.__func__.6844
+                0x00016138       0x24 subsys/built-in.o
+ .rodata.__func__.6861
+                0x0001615c       0x12 subsys/built-in.o
+ .rodata.__func__.6801
+                0x0001616e        0xa subsys/built-in.o
+ .rodata.__func__.6762
+                0x00016178        0xd subsys/built-in.o
+ .rodata.__func__.6546
+                0x00016185        0xd subsys/built-in.o
+ .rodata.__func__.6508
+                0x00016192        0xb subsys/built-in.o
+ .rodata.__func__.6407
+                0x0001619d       0x22 subsys/built-in.o
+ .rodata.__func__.6525
+                0x000161bf        0xe subsys/built-in.o
+ .rodata.__func__.6484
+                0x000161cd       0x12 subsys/built-in.o
+ .rodata.__func__.6946
+                0x000161df        0xd subsys/built-in.o
+ .rodata.__func__.7356
+                0x000161ec        0xc subsys/built-in.o
+ .rodata.CSWTCH.52
+                0x000161f8       0x14 subsys/built-in.o
+ .rodata.handlers
+                0x0001620c      0x148 subsys/built-in.o
+ .rodata.__func__.7249
+                0x00016354       0x15 subsys/built-in.o
+ .rodata.__func__.6959
+                0x00016369        0xf subsys/built-in.o
+ .rodata.__func__.7392
+                0x00016378        0xc subsys/built-in.o
+ .rodata.__func__.7374
+                0x00016384       0x12 subsys/built-in.o
+ .rodata.__func__.7412
+                0x00016396       0x16 subsys/built-in.o
+ .rodata.__func__.7365
+                0x000163ac        0xd subsys/built-in.o
+ .rodata.__func__.7419
+                0x000163b9        0xe subsys/built-in.o
+ .rodata.__func__.7178
+                0x000163c7        0xc subsys/built-in.o
+ .rodata.__func__.7069
+                0x000163d3       0x17 subsys/built-in.o
+ .rodata.__func__.7196
+                0x000163ea        0xa subsys/built-in.o
+ .rodata.__func__.6979
+                0x000163f4        0xe subsys/built-in.o
+ .rodata.__func__.7137
+                0x00016402       0x17 subsys/built-in.o
+ .rodata.__func__.7203
+                0x00016419        0xe subsys/built-in.o
+ .rodata.__func__.6775
+                0x00016427       0x17 subsys/built-in.o
+ .rodata.__func__.6972
+                0x0001643e       0x13 subsys/built-in.o
+ .rodata.__func__.6982
+                0x00016451        0xf subsys/built-in.o
+ .rodata.gen_method_sc
+                0x00016460       0x19 subsys/built-in.o
+ .rodata.__func__.7060
+                0x00016479        0xc subsys/built-in.o
+ .rodata.__func__.7065
+                0x00016485       0x12 subsys/built-in.o
+ .rodata.__func__.6992
+                0x00016497       0x14 subsys/built-in.o
+ .rodata.sc_debug_public_key
+                0x000164ab       0x40 subsys/built-in.o
+ .rodata.__func__.6708
+                0x000164eb        0xc subsys/built-in.o
+ .rodata.gen_method_legacy
+                0x000164f7       0x19 subsys/built-in.o
+ .rodata.__func__.7128
+                0x00016510       0x13 subsys/built-in.o
+ .rodata.__func__.6875
+                0x00016523        0xd subsys/built-in.o
+ .rodata.__func__.7147
+                0x00016530        0xe subsys/built-in.o
+ .rodata.salt.6650
+                0x0001653e       0x10 subsys/built-in.o
+ .rodata.__func__.6781
+                0x0001654e       0x17 subsys/built-in.o
+ .rodata.__func__.6853
+                0x00016565       0x11 subsys/built-in.o
+ .rodata.__func__.7025
+                0x00016576        0xf subsys/built-in.o
+ .rodata.__func__.6807
+                0x00016585       0x12 subsys/built-in.o
+ .rodata.__func__.9038
+                0x00016597        0xf subsys/built-in.o
+ .rodata.__func__.8988
+                0x000165a6        0xf subsys/built-in.o
+ .rodata.__func__.8825
+                0x000165b5        0xf subsys/built-in.o
+ .rodata.__func__.8939
+                0x000165c4       0x14 subsys/built-in.o
+ .rodata.__func__.8892
+                0x000165d8       0x15 subsys/built-in.o
+ .rodata.__func__.8842
+                0x000165ed        0xf subsys/built-in.o
+ .rodata.__func__.8960
+                0x000165fc        0xf subsys/built-in.o
+ .rodata.__func__.9024
+                0x0001660b       0x11 subsys/built-in.o
+ .rodata.__func__.8863
+                0x0001661c       0x12 subsys/built-in.o
+ .rodata.CSWTCH.169
+                0x0001662e        0xb subsys/built-in.o
+ *fill*         0x00016639        0x3 
+ .rodata.drv    0x0001663c       0x10 subsys/built-in.o
+ .rodata.__func__.8665
+                0x0001664c       0x10 subsys/built-in.o
+ .rodata.__func__.8674
+                0x0001665c       0x10 subsys/built-in.o
+ .rodata.__func__.8640
+                0x0001666c        0xc subsys/built-in.o
+ .rodata.__func__.7806
+                0x00016678        0xa subsys/built-in.o
+ .rodata.__func__.7803
+                0x00016682        0xa subsys/built-in.o
+ .rodata.__func__.8143
+                0x0001668c       0x1a subsys/built-in.o
+ .rodata.__func__.8208
+                0x000166a6       0x1f subsys/built-in.o
+ .rodata.__func__.8221
+                0x000166c5       0x17 subsys/built-in.o
+ .rodata.__func__.8198
+                0x000166dc       0x1f subsys/built-in.o
+ .rodata.__func__.8256
+                0x000166fb       0x17 subsys/built-in.o
+ .rodata.__func__.9328
+                0x00016712       0x19 subsys/built-in.o
+ .rodata.__func__.9907
+                0x0001672b       0x19 subsys/built-in.o
+ .rodata.__func__.8989
+                0x00016744        0xc subsys/built-in.o
+ .rodata.__func__.9962
+                0x00016750       0x11 subsys/built-in.o
+ .rodata.__func__.9349
+                0x00016761        0xd subsys/built-in.o
+ .rodata.__func__.9754
+                0x0001676e       0x19 subsys/built-in.o
+ .rodata.__func__.9943
+                0x00016787        0xd subsys/built-in.o
+ .rodata.__func__.9300
+                0x00016794        0x4 subsys/built-in.o
+ .rodata.gc_lookup_ppm
+                0x00016798       0x10 subsys/built-in.o
+ .rodata.__func__.9980
+                0x000167a8        0xf subsys/built-in.o
+ .rodata.__func__.9156
+                0x000167b7       0x15 subsys/built-in.o
+ .rodata.__func__.9932
+                0x000167cc        0xc subsys/built-in.o
+ .rodata.__func__.9949
+                0x000167d8       0x13 subsys/built-in.o
+ .rodata.__func__.9387
+                0x000167eb       0x13 subsys/built-in.o
+ .rodata.__func__.9414
+                0x000167fe       0x13 subsys/built-in.o
+ .rodata.__func__.9968
+                0x00016811       0x11 subsys/built-in.o
+ .rodata.__func__.9334
+                0x00016822       0x1b subsys/built-in.o
+ .rodata.__func__.9362
+                0x0001683d        0xf subsys/built-in.o
+ .rodata.__func__.9248
+                0x0001684c        0xe subsys/built-in.o
+ .rodata.__func__.9988
+                0x0001685a       0x14 subsys/built-in.o
+ .rodata.__func__.10031
+                0x0001686e       0x14 subsys/built-in.o
+ .rodata.__func__.9705
+                0x00016882        0xf subsys/built-in.o
+ .rodata.__func__.10333
+                0x00016891       0x1c subsys/built-in.o
+ .rodata.__func__.9281
+                0x000168ad       0x16 subsys/built-in.o
+ .rodata.__func__.9445
+                0x000168c3       0x12 subsys/built-in.o
+ .rodata.__func__.10059
+                0x000168d5        0xd subsys/built-in.o
+ .rodata.__func__.10257
+                0x000168e2       0x11 subsys/built-in.o
+ .rodata.__func__.9746
+                0x000168f3       0x17 subsys/built-in.o
+ .rodata.__func__.9313
+                0x0001690a       0x16 subsys/built-in.o
+ .rodata.__func__.9318
+                0x00016920       0x17 subsys/built-in.o
+ .rodata.__func__.9912
+                0x00016937        0xc subsys/built-in.o
+ .rodata.__func__.9054
+                0x00016943       0x13 subsys/built-in.o
+ .rodata.__func__.9785
+                0x00016956        0xc subsys/built-in.o
+ .rodata.__func__.9339
+                0x00016962       0x14 subsys/built-in.o
+ .rodata.__func__.10297
+                0x00016976       0x15 subsys/built-in.o
+ .rodata.__func__.9073
+                0x0001698b        0xc subsys/built-in.o
+ .rodata.__func__.9654
+                0x00016997       0x17 subsys/built-in.o
+ .rodata.__func__.9375
+                0x000169ae        0xb subsys/built-in.o
+ .rodata.__func__.9802
+                0x000169b9        0xd subsys/built-in.o
+ .rodata.__func__.9955
+                0x000169c6       0x13 subsys/built-in.o
+ .rodata.__func__.9240
+                0x000169d9       0x13 subsys/built-in.o
+ .rodata.__func__.10341
+                0x000169ec       0x15 subsys/built-in.o
+ .rodata.__func__.9691
+                0x00016a01        0xf subsys/built-in.o
+ .rodata.__func__.9974
+                0x00016a10       0x11 subsys/built-in.o
+ .rodata.__func__.9541
+                0x00016a21        0x9 subsys/built-in.o
+ .rodata.__func__.9108
+                0x00016a2a       0x22 subsys/built-in.o
+ .rodata.__func__.10002
+                0x00016a4c        0xd subsys/built-in.o
+ .rodata.__func__.9996
+                0x00016a59       0x11 subsys/built-in.o
+ .rodata.__func__.9268
+                0x00016a6a        0xf subsys/built-in.o
+ .rodata.__func__.9848
+                0x00016a79       0x12 subsys/built-in.o
+ .rodata.__func__.9568
+                0x00016a8b       0x18 subsys/built-in.o
+ .rodata.__func__.9471
+                0x00016aa3       0x15 subsys/built-in.o
+ .rodata.__func__.9923
+                0x00016ab8       0x10 subsys/built-in.o
+ .rodata.__func__.9432
+                0x00016ac8       0x16 subsys/built-in.o
+ .rodata.__func__.9132
+                0x00016ade       0x19 subsys/built-in.o
+ .rodata.__func__.9881
+                0x00016af7       0x14 subsys/built-in.o
+ .rodata.__func__.9588
+                0x00016b0b        0xa subsys/built-in.o
+ .rodata.__func__.9733
+                0x00016b15       0x13 subsys/built-in.o
+ .rodata.__func__.9886
+                0x00016b28       0x13 subsys/built-in.o
+ .rodata.__func__.9203
+                0x00016b3b       0x10 subsys/built-in.o
+ .rodata.__func__.9455
+                0x00016b4b        0xb subsys/built-in.o
+ .rodata.__func__.9009
+                0x00016b56       0x13 subsys/built-in.o
+ .rodata.__func__.9086
+                0x00016b69       0x14 subsys/built-in.o
+ .rodata.__func__.9601
+                0x00016b7d        0xf subsys/built-in.o
+ .rodata.__func__.9323
+                0x00016b8c       0x18 subsys/built-in.o
+ .rodata.__func__.9042
+                0x00016ba4        0xb subsys/built-in.o
+ .rodata.__func__.8853
+                0x00016baf       0x12 subsys/built-in.o
+ .rodata.__func__.8900
+                0x00016bc1        0x8 subsys/built-in.o
+ .rodata.__func__.8848
+                0x00016bc9       0x11 subsys/built-in.o
+ .rodata.__func__.8867
+                0x00016bda        0xc subsys/built-in.o
+ .rodata.__func__.6397
+                0x00016be6       0x15 subsys/built-in.o
+ .rodata.__func__.6425
+                0x00016bfb       0x11 subsys/built-in.o
+ .rodata.str1.1
+                0x00016c0c      0x4ad arch/built-in.o
+                                0x4af (size before relaxing)
+ *fill*         0x000170b9        0x3 
+ .rodata.config_levels
+                0x000170bc       0x14 kernel/lib.a(device.o)
+ .rodata._k_neg_eagain
+                0x000170d0        0x4 kernel/lib.a(errno.o)
+                0x000170d0                _k_neg_eagain
+ .rodata._idle_thread
+                0x000170d4        0x4 kernel/lib.a(init.o)
+                0x000170d4                _idle_thread
+ .rodata.str1.1
+                0x000170d8        0x1 kernel/lib.a(system_work_q.o)
+ *(.gnu.linkonce.r.*)
+                0x000170dc                . = ALIGN (0x4)
+                0x000170dc                _image_rom_end = .
+                0x000170dc                __data_rom_start = .
+
+.rel.dyn        0x000170d8        0x0
+ .rel.iplt      0x000170d8        0x0 isr_tables.o
+
+datas           0x20000000      0x6e8 load address 0x000170d8
+                0x20000000                _image_ram_start = .
+                0x20000000                __data_ram_start = .
+ *(.data)
+ *(.data.*)
+ .data.__compound_literal.1
+                0x20000000        0xe src/built-in.o
+ *fill*         0x2000000e        0x2 
+ .data.conn_callbacks
+                0x20000010       0x1c src/built-in.o
+ .data.__compound_literal.3
+                0x2000002c       0x12 src/built-in.o
+ *fill*         0x2000003e        0x2 
+ .data.auth_cb_display
+                0x20000040       0x14 src/built-in.o
+ .data.heartrate
+                0x20000054        0x1 src/built-in.o
+ *fill*         0x20000055        0x3 
+ .data.__compound_literal.10
+                0x20000058        0x8 src/built-in.o
+ .data.__compound_literal.11
+                0x20000060        0x4 src/built-in.o
+ .data.__compound_literal.12
+                0x20000064        0x4 src/built-in.o
+ .data.__compound_literal.13
+                0x20000068        0x4 src/built-in.o
+ .data.__compound_literal.14
+                0x2000006c        0x8 src/built-in.o
+ .data.__compound_literal.15
+                0x20000074        0x4 src/built-in.o
+ .data.__compound_literal.8
+                0x20000078        0xc src/built-in.o
+ .data.__compound_literal.9
+                0x20000084        0x8 src/built-in.o
+ .data.__compound_literal.4
+                0x2000008c       0x18 src/built-in.o
+ .data.__compound_literal.2
+                0x200000a4        0xc src/built-in.o
+ .data.__compound_literal.5
+                0x200000b0        0xc src/built-in.o
+ .data.__compound_literal.7
+                0x200000bc       0x24 src/built-in.o
+ .data.__compound_literal.0
+                0x200000e0        0xc src/built-in.o
+ .data.attrs    0x200000ec      0x154 src/built-in.o
+ .data.hrs_svc  0x20000240        0xc src/built-in.o
+ .data.__compound_literal.6
+                0x2000024c        0xc src/built-in.o
+ .data.dis_svc  0x20000258        0xc src/built-in.o
+ .data.battery  0x20000264        0x1 src/built-in.o
+ *fill*         0x20000265        0x3 
+ .data.bas_svc  0x20000268        0xc src/built-in.o
+ .data.uart_nrf5_dev_data_0
+                0x20000274        0x4 drivers/built-in.o
+ .data._char_out
+                0x20000278        0x4 misc/built-in.o
+ .data.events.9042
+                0x2000027c       0x30 subsys/built-in.o
+ *fill*         0x200002ac        0x4 
+ .data.bt_dev   0x200002b0       0xe0 subsys/built-in.o
+                0x200002b0                bt_dev
+ .data.chan.6555
+                0x20000390        0xc subsys/built-in.o
+ .data.ops.6545
+                0x2000039c       0x14 subsys/built-in.o
+ .data.chan.7428
+                0x200003b0        0xc subsys/built-in.o
+ .data.ops.7418
+                0x200003bc       0x14 subsys/built-in.o
+ .data.gatt_attrs
+                0x200003d0       0x50 subsys/built-in.o
+ .data.__compound_literal.1
+                0x20000420        0x4 subsys/built-in.o
+ .data.__compound_literal.2
+                0x20000424        0x4 subsys/built-in.o
+ .data.__compound_literal.3
+                0x20000428        0x4 subsys/built-in.o
+ .data.__compound_literal.4
+                0x2000042c        0x8 subsys/built-in.o
+ .data.__compound_literal.6
+                0x20000434        0x4 subsys/built-in.o
+ .data.gap_attrs
+                0x20000438       0x64 subsys/built-in.o
+ .data.__compound_literal.8
+                0x2000049c        0x8 subsys/built-in.o
+ .data.__compound_literal.9
+                0x200004a4        0x4 subsys/built-in.o
+ .data.gap_svc  0x200004a8        0xc subsys/built-in.o
+ .data.__compound_literal.0
+                0x200004b4        0x4 subsys/built-in.o
+ .data.__compound_literal.7
+                0x200004b8        0x4 subsys/built-in.o
+ .data.gatt_svc
+                0x200004bc        0xc subsys/built-in.o
+ .data.sc_sem   0x200004c8       0x14 subsys/built-in.o
+ .data.__compound_literal.10
+                0x200004dc        0x4 subsys/built-in.o
+ .data.__compound_literal.11
+                0x200004e0        0x4 subsys/built-in.o
+ .data.__compound_literal.12
+                0x200004e4        0x4 subsys/built-in.o
+ .data.__compound_literal.13
+                0x200004e8        0x4 subsys/built-in.o
+ .data.__compound_literal.14
+                0x200004ec        0x8 subsys/built-in.o
+ .data.__compound_literal.15
+                0x200004f4        0x4 subsys/built-in.o
+ .data.__compound_literal.16
+                0x200004f8        0x4 subsys/built-in.o
+ .data.__compound_literal.17
+                0x200004fc       0x10 subsys/built-in.o
+ .data.__compound_literal.5
+                0x2000050c        0x4 subsys/built-in.o
+ .data.chan.7159
+                0x20000510        0xc subsys/built-in.o
+ .data.ops.7146
+                0x2000051c       0x14 subsys/built-in.o
+ .data.pub_key_cb.7160
+                0x20000530        0x8 subsys/built-in.o
+ .data.event_mask
+                0x20000538        0x8 subsys/built-in.o
+ .data.le_event_mask
+                0x20000540        0x8 subsys/built-in.o
+ .data.m.8218   0x20000548       0x10 subsys/built-in.o
+ .data.m.8226   0x20000558       0x10 subsys/built-in.o
+ .data.m.8232   0x20000568       0x10 subsys/built-in.o
+ .data.m.8236   0x20000578       0x10 subsys/built-in.o
+ .data.m.8241   0x20000588       0x10 subsys/built-in.o
+ .data.m.8253   0x20000598       0x10 subsys/built-in.o
+ .data.m.8261   0x200005a8       0x10 subsys/built-in.o
+ .data.m.8271   0x200005b8       0x10 subsys/built-in.o
+ .data.m.8276   0x200005c8       0x10 subsys/built-in.o
+ .data.m.8267   0x200005d8       0x10 subsys/built-in.o
+ .data.s_mfy_xtal_start.9385
+                0x200005e8       0x10 subsys/built-in.o
+ .data.s_mfy_radio_stop.10042
+                0x200005f8       0x10 subsys/built-in.o
+ .data.s_mfy_xtal_stop_calc.9475
+                0x20000608       0x10 subsys/built-in.o
+ .data.s_mfy_xtal_stop.10033
+                0x20000618       0x10 subsys/built-in.o
+ .data.s_mfy_radio_inactive.10028
+                0x20000628       0x10 subsys/built-in.o
+ .data.s_mfy_radio_active.9347
+                0x20000638       0x10 subsys/built-in.o
+ .data.s_mfy_radio_inactive.9360
+                0x20000648       0x10 subsys/built-in.o
+ .data.s_mfy_xtal_stop.9389
+                0x20000658       0x20 subsys/built-in.o
+ .data.s_mfy_xtal_start.9373
+                0x20000678       0x10 subsys/built-in.o
+ .data.s_mfy_radio_stop.9453
+                0x20000688       0x10 subsys/built-in.o
+ .data.SystemCoreClock
+                0x20000698        0x4 arch/built-in.o
+                0x20000698                SystemCoreClock
+ .data.mpu_regions
+                0x2000069c       0x3c arch/built-in.o
+ .data.mpu_config
+                0x200006d8        0x8 arch/built-in.o
+                0x200006d8                mpu_config
+ .data._sys_idle_threshold_ticks
+                0x200006e0        0x4 kernel/lib.a(idle.o)
+                0x200006e0                _sys_idle_threshold_ticks
+ .data._sys_idle_elapsed_ticks
+                0x200006e4        0x4 kernel/lib.a(sys_clock.o)
+                0x200006e4                _sys_idle_elapsed_ticks
+
+initlevel       0x200006e8       0x78 load address 0x000177c0
+                0x200006e8                __device_init_start = .
+                0x200006e8                __device_PRE_KERNEL_1_start = .
+ *(SORT(.init_PRE_KERNEL_1[0-9]))
+ .init_PRE_KERNEL_10
+                0x200006e8        0xc arch/built-in.o
+ *(SORT(.init_PRE_KERNEL_1[1-9][0-9]))
+ .init_PRE_KERNEL_140
+                0x200006f4        0xc arch/built-in.o
+ .init_PRE_KERNEL_150
+                0x20000700       0x24 drivers/built-in.o
+                0x20000724                __device_PRE_KERNEL_2_start = .
+ *(SORT(.init_PRE_KERNEL_2[0-9]))
+ *(SORT(.init_PRE_KERNEL_2[1-9][0-9]))
+                0x20000724                __device_POST_KERNEL_start = .
+ *(SORT(.init_POST_KERNEL[0-9]))
+ .init_POST_KERNEL0
+                0x20000724        0xc drivers/built-in.o
+ *(SORT(.init_POST_KERNEL[1-9][0-9]))
+ .init_POST_KERNEL40
+                0x20000730        0xc drivers/built-in.o
+ .init_POST_KERNEL40
+                0x2000073c        0xc kernel/lib.a(system_work_q.o)
+ .init_POST_KERNEL50
+                0x20000748        0xc subsys/built-in.o
+ .init_POST_KERNEL60
+                0x20000754        0xc drivers/built-in.o
+                0x20000760                __device_APPLICATION_start = .
+ *(SORT(.init_APPLICATION[0-9]))
+ *(SORT(.init_APPLICATION[1-9][0-9]))
+                0x20000760                __device_init_end = .
+
+initlevel_error
+                0x000170d8        0x0
+ *(SORT(.init_[_A-Z0-9]*))
+                0x00000001                ASSERT ((SIZEOF (initlevel_error) == 0x0), Undefined initialization levels used.)
+
+initshell       0x20000760        0x0 load address 0x00017838
+                0x20000760                __shell_cmd_start = .
+ *(.shell_*)
+                0x20000760                __shell_cmd_end = .
+
+_static_thread_area
+                0x20000760        0x0 load address 0x00017838
+                0x20000760                _static_thread_data_list_start = .
+ *(SORT(._static_thread_data.static.*))
+                0x20000760                _static_thread_data_list_end = .
+
+_k_timer_area   0x20000760        0x0 load address 0x00017838
+                0x20000760                _k_timer_list_start = .
+ *(SORT(._k_timer.static.*))
+                0x20000760                _k_timer_list_end = .
+
+_k_mem_slab_area
+                0x20000760        0x0 load address 0x00017838
+                0x20000760                _k_mem_slab_list_start = .
+ *(SORT(._k_mem_slab.static.*))
+                0x20000760                _k_mem_slab_list_end = .
+
+_k_mem_pool_area
+                0x20000760        0x0 load address 0x00017838
+ *(SORT(._k_memory_pool.struct*))
+                0x20000760                _k_mem_pool_list_start = .
+ *(SORT(._k_mem_pool.static.*))
+                0x20000760                _k_mem_pool_list_end = .
+
+_k_sem_area     0x20000760       0x14 load address 0x00017838
+                0x20000760                _k_sem_list_start = .
+ *(SORT(._k_sem.static.*))
+ ._k_sem.static.sem_prio_recv
+                0x20000760       0x14 subsys/built-in.o
+                0x20000774                _k_sem_list_end = .
+
+_k_mutex_area   0x20000774       0x14 load address 0x0001784c
+                0x20000774                _k_mutex_list_start = .
+ *(SORT(._k_mutex.static.*))
+ ._k_mutex.static.mutex_rand
+                0x20000774       0x14 subsys/built-in.o
+                0x20000774                mutex_rand
+                0x20000788                _k_mutex_list_end = .
+
+_k_alert_area   0x20000788        0x0 load address 0x00017860
+                0x20000788                _k_alert_list_start = .
+ *(SORT(._k_alert.static.*))
+                0x20000788                _k_alert_list_end = .
+
+_k_queue_area   0x20000788       0x14 load address 0x00017860
+                0x20000788                _k_queue_list_start = .
+ *(SORT(._k_queue.static.*))
+ ._k_queue.static.recv_fifo
+                0x20000788       0x14 subsys/built-in.o
+                0x2000079c                _k_queue_list_end = .
+
+_k_stack_area   0x2000079c        0x0 load address 0x00017874
+                0x2000079c                _k_stack_list_start = .
+ *(SORT(._k_stack.static.*))
+                0x2000079c                _k_stack_list_end = .
+
+_k_msgq_area    0x2000079c        0x0 load address 0x00017874
+                0x2000079c                _k_msgq_list_start = .
+ *(SORT(._k_msgq.static.*))
+                0x2000079c                _k_msgq_list_end = .
+
+_k_mbox_area    0x2000079c        0x0 load address 0x00017874
+                0x2000079c                _k_mbox_list_start = .
+ *(SORT(._k_mbox.static.*))
+                0x2000079c                _k_mbox_list_end = .
+
+_k_pipe_area    0x2000079c        0x0 load address 0x00017874
+                0x2000079c                _k_pipe_list_start = .
+ *(SORT(._k_pipe.static.*))
+                0x2000079c                _k_pipe_list_end = .
+
+_k_task_list    0x2000079c        0x0 load address 0x00017874
+                0x2000079c                _k_task_list_start = .
+ *(._k_task_list.public.*)
+ *(._k_task_list.private.*)
+                0x2000079c                _k_task_list_idle_start = .
+ *(._k_task_list.idle.*)
+ *(SORT(._k_task_list*))
+                0x2000079c                _k_task_list_end = .
+
+_k_event_list   0x2000079c        0x0 load address 0x00017874
+                0x2000079c                _k_event_list_start = .
+ *(._k_event_list.event.*)
+ *(SORT(._k_event_list*))
+                0x2000079c                _k_event_list_end = .
+
+_k_memory_pool  0x2000079c        0x0 load address 0x00017874
+ *(._k_memory_pool.struct*)
+ *(SORT(._k_memory_pool.struct*))
+                0x2000079c                _k_mem_pool_start = .
+ *(._k_memory_pool.*)
+ *(SORT(._k_memory_pool*))
+                0x2000079c                _k_mem_pool_end = .
+
+_net_buf_pool_area
+                0x2000079c       0x6c load address 0x00017874
+                0x2000079c                _net_buf_pool_list = .
+ *(SORT(._net_buf_pool.static.*))
+ ._net_buf_pool.static.acl_tx_pool
+                0x2000079c       0x24 subsys/built-in.o
+                0x2000079c                acl_tx_pool
+ ._net_buf_pool.static.hci_cmd_pool
+                0x200007c0       0x24 subsys/built-in.o
+                0x200007c0                hci_cmd_pool
+ ._net_buf_pool.static.hci_rx_pool
+                0x200007e4       0x24 subsys/built-in.o
+                0x200007e4                hci_rx_pool
+
+net_if          0x20000808        0x0 load address 0x000178e0
+                0x20000808                __net_if_start = .
+ *(.net_if.*)
+ *(SORT(.net_if.*))
+                0x20000808                __net_if_end = .
+
+net_if_event    0x20000808        0x0 load address 0x000178e0
+                0x20000808                __net_if_event_start = .
+ *(.net_if_event.*)
+ *(SORT(.net_if_event.*))
+                0x20000808                __net_if_event_end = .
+
+net_l2_data     0x20000808        0x0 load address 0x000178e0
+                0x20000808                __net_l2_data_start = .
+ *(.net_l2.data)
+ *(SORT(.net_l2.data*))
+                0x20000808                __net_l2_data_end = .
+                0x20000808                __data_ram_end = .
+
+bss             0x20000808     0x1aac
+                0x20000808                . = ALIGN (0x4)
+                0x20000808                __bss_start = .
+ *(.bss)
+ *(.bss.*)
+ .bss.simulate_hrm
+                0x20000808        0x1 src/built-in.o
+ .bss.hrs_blsc  0x20000809        0x1 src/built-in.o
+ .bss.hrm.6236  0x2000080a        0x2 src/built-in.o
+ .bss.hrmc_ccc_cfg
+                0x2000080c        0xc src/built-in.o
+ .bss.dis_manuf
+                0x20000818        0x4 src/built-in.o
+ .bss.dis_model
+                0x2000081c        0x4 src/built-in.o
+ .bss.blvl_ccc_cfg
+                0x20000820        0xc src/built-in.o
+ .bss.simulate_blvl
+                0x2000082c        0x1 src/built-in.o
+ *fill*         0x2000082d        0x3 
+ .bss.uart_console_dev
+                0x20000830        0x4 drivers/built-in.o
+ .bss.rtc_past  0x20000834        0x4 drivers/built-in.o
+ .bss.expected_sys_ticks
+                0x20000838        0x4 drivers/built-in.o
+ .bss.gpio_data_P0
+                0x2000083c       0x10 drivers/built-in.o
+ .bss.m16src_ref
+                0x2000084c        0x1 drivers/built-in.o
+ .bss.m16src_grd
+                0x2000084d        0x1 drivers/built-in.o
+ .bss.cur.5744  0x2000084e        0x1 subsys/built-in.o
+ .bss.bufs.5743
+                0x2000084f       0x36 subsys/built-in.o
+ .bss.hexbufs.5725
+                0x20000885      0x204 subsys/built-in.o
+ .bss.curbuf.5726
+                0x20000a89        0x1 subsys/built-in.o
+ *fill*         0x20000a8a        0x2 
+ .bss.tx_thread_data
+                0x20000a8c       0x68 subsys/built-in.o
+ .bss.ready_cb  0x20000af4        0x4 subsys/built-in.o
+ .bss.pub_key   0x20000af8       0x40 subsys/built-in.o
+ .bss.scan_dev_found_cb
+                0x20000b38        0x4 subsys/built-in.o
+ .bss.pub_key_cb
+                0x20000b3c        0x4 subsys/built-in.o
+ .bss.dh_key_cb
+                0x20000b40        0x4 subsys/built-in.o
+ .bss.free_tx   0x20000b44        0x8 subsys/built-in.o
+ .bss.conn_change
+                0x20000b4c        0xc subsys/built-in.o
+ .bss.conn_tx   0x20000b58       0x10 subsys/built-in.o
+ .bss.callback_list
+                0x20000b68        0x4 subsys/built-in.o
+ .bss.conns     0x20000b6c       0xa8 subsys/built-in.o
+ .bss.le_channels
+                0x20000c14        0x8 subsys/built-in.o
+ .bss.bt_l2cap_pool
+                0x20000c1c       0x90 subsys/built-in.o
+ .bss.ident.6384
+                0x20000cac        0x1 subsys/built-in.o
+ *fill*         0x20000cad        0x3 
+ .bss.bt_req_pool
+                0x20000cb0       0xdc subsys/built-in.o
+ .bss.sc_ccc_cfg
+                0x20000d8c        0xc subsys/built-in.o
+ .bss.db        0x20000d98        0x8 subsys/built-in.o
+ .bss.params.6997
+                0x20000da0       0x28 subsys/built-in.o
+ .bss.sc_supported
+                0x20000dc8        0x1 subsys/built-in.o
+ .bss.sc_public_key
+                0x20000dc9       0x40 subsys/built-in.o
+ .bss.sc_local_pkey_valid
+                0x20000e09        0x1 subsys/built-in.o
+ *fill*         0x20000e0a        0x2 
+ .bss.bt_smp_pool
+                0x20000e0c      0x198 subsys/built-in.o
+ *fill*         0x20000fa4        0x4 
+ .bss.key_pool  0x20000fa8       0x68 subsys/built-in.o
+ .bss._opcode   0x20001010        0x2 subsys/built-in.o
+ *fill*         0x20001012        0x2 
+ .bss.conn_count
+                0x20001014        0x4 subsys/built-in.o
+ .bss.mfl       0x20001018       0x80 subsys/built-in.o
+ .bss.mft       0x20001098       0xc0 subsys/built-in.o
+ .bss._refcount
+                0x20001158        0x1 subsys/built-in.o
+ *fill*         0x20001159        0x3 
+ .bss._pkt_scratch
+                0x2000115c      0x102 subsys/built-in.o
+ *fill*         0x2000125e        0x2 
+ .bss._pkt_empty
+                0x20001260        0x3 subsys/built-in.o
+ *fill*         0x20001263        0x1 
+ .bss._ccm_scratch
+                0x20001264      0x10b subsys/built-in.o
+ *fill*         0x2000136f        0x1 
+ .bss.sfp_radio_isr
+                0x20001370        0x4 subsys/built-in.o
+ .bss.rng       0x20001374        0x4 subsys/built-in.o
+ .bss.link.8270
+                0x20001378        0x8 subsys/built-in.o
+ .bss.link.8225
+                0x20001380        0x8 subsys/built-in.o
+ .bss.link.8231
+                0x20001388        0x8 subsys/built-in.o
+ .bss.link.8235
+                0x20001390        0x8 subsys/built-in.o
+ .bss.link.8240
+                0x20001398        0x8 subsys/built-in.o
+ .bss.link.8275
+                0x200013a0        0x8 subsys/built-in.o
+ .bss.link.8252
+                0x200013a8        0x8 subsys/built-in.o
+ .bss.link.8260
+                0x200013b0        0x8 subsys/built-in.o
+ .bss.link.8266
+                0x200013b8        0x8 subsys/built-in.o
+ .bss._instance
+                0x200013c0       0x58 subsys/built-in.o
+ .bss.link.8217
+                0x20001418        0x8 subsys/built-in.o
+ .bss.s_link.9474
+                0x20001420        0x8 subsys/built-in.o
+ .bss.s_link.9384
+                0x20001428        0x8 subsys/built-in.o
+ .bss.s_link.9372
+                0x20001430        0x8 subsys/built-in.o
+ .bss.s_link.10041
+                0x20001438        0x8 subsys/built-in.o
+ .bss.s_active.9338
+                0x20001440        0x1 subsys/built-in.o
+ *fill*         0x20001441        0x3 
+ .bss.s_link.10027
+                0x20001444        0x8 subsys/built-in.o
+ .bss.s_xtal_retained.9383
+                0x2000144c        0x1 subsys/built-in.o
+ *fill*         0x2000144d        0x3 
+ .bss.s_link.9452
+                0x20001450        0x8 subsys/built-in.o
+ .bss.s_link.9359
+                0x20001458        0x8 subsys/built-in.o
+ .bss.s_link.10032
+                0x20001460        0x8 subsys/built-in.o
+ .bss.s_link.9346
+                0x20001468        0x8 subsys/built-in.o
+ .bss._radio    0x20001470      0x518 subsys/built-in.o
+ .bss.s_link.9388
+                0x20001988       0x10 subsys/built-in.o
+ .bss._ticker_nodes
+                0x20001998      0x120 subsys/built-in.o
+ .bss._ticker_users
+                0x20001ab8       0x20 subsys/built-in.o
+ .bss.sem_recv  0x20001ad8        0x4 subsys/built-in.o
+ .bss._ll_context
+                0x20001adc        0xc subsys/built-in.o
+ .bss._ticker_user_ops
+                0x20001ae8      0x23c subsys/built-in.o
+ .bss._rand_context
+                0x20001d24        0x8 subsys/built-in.o
+ .bss.peer_irk_count
+                0x20001d2c        0x1 subsys/built-in.o
+ .bss.peer_irks
+                0x20001d2d       0x80 subsys/built-in.o
+ .bss.wl        0x20001dad       0x32 subsys/built-in.o
+ .bss.rl        0x20001ddf      0x120 subsys/built-in.o
+ .bss.rl_enable
+                0x20001eff        0x1 subsys/built-in.o
+ .bss.ll_adv    0x20001f00       0x10 subsys/built-in.o
+ .bss.arm_mpu_enabled
+                0x20001f10        0x1 arch/built-in.o
+ *fill*         0x20001f11        0x3 
+ .bss._main_thread_s
+                0x20001f14       0x68 kernel/lib.a(init.o)
+ .bss._idle_thread_s
+                0x20001f7c       0x68 kernel/lib.a(init.o)
+ .bss._kernel   0x20001fe4      0x120 kernel/lib.a(sched.o)
+                0x20001fe4                _kernel
+ .bss._time_slice_prio_ceiling
+                0x20002104        0x4 kernel/lib.a(sys_clock.o)
+                0x20002104                _time_slice_prio_ceiling
+ .bss._time_slice_duration
+                0x20002108        0x4 kernel/lib.a(sys_clock.o)
+                0x20002108                _time_slice_duration
+ *(COMMON)
+ COMMON         0x2000210c        0x4 src/built-in.o
+                0x2000210c                default_conn
+ COMMON         0x20002110      0x114 subsys/built-in.o
+                0x20002110                bt_auth
+                0x20002118                rpa_last_ms
+                0x20002120                wl_anon
+                0x20002124                bt_storage
+                0x20002128                recv_thread_data
+                0x20002190                rpa_work
+                0x200021b8                prio_recv_thread_data
+                0x20002220                rpa_timeout_ms
+ *fill*         0x20002224        0x4 
+ COMMON         0x20002228       0x10 kernel/lib.a(sys_clock.o)
+                0x20002228                _handling_timeouts
+                0x2000222c                _time_slice_elapsed
+                0x20002230                _sys_clock_tick_count
+ COMMON         0x20002238       0x7c kernel/lib.a(system_work_q.o)
+                0x20002238                k_sys_work_q
+                0x200022b4                __bss_end = ALIGN (0x4)
+
+noinit          0x200022b4     0x200c
+ *(.noinit)
+ *(.noinit.*)
+ .noinit._FILE_PATH_HASH.2
+                0x200022b4      0x120 subsys/built-in.o
+ .noinit._FILE_PATH_HASH.1
+                0x200023d4      0x5f4 subsys/built-in.o
+ .noinit._FILE_PATH_HASH.0
+                0x200029c8      0x7b8 subsys/built-in.o
+ .noinit._FILE_PATH_HASH.0
+                0x20003180      0x400 kernel/lib.a(init.o)
+                0x20003180                _main_stack
+ .noinit._FILE_PATH_HASH.1
+                0x20003580      0x140 kernel/lib.a(init.o)
+                0x20003580                _idle_stack
+ .noinit._FILE_PATH_HASH.2
+                0x200036c0      0x800 kernel/lib.a(init.o)
+                0x200036c0                _interrupt_stack
+ .noinit._FILE_PATH_HASH.0
+                0x20003ec0      0x400 kernel/lib.a(system_work_q.o)
+                0x20003ec0                sys_work_q_stack
+                0x200042c0                _image_ram_end = .
+                0x200042c0                _end = .
+
+/DISCARD/
+ *(.irq_info)
+ *(.intList)
+OUTPUT(zephyr.elf elf32-littlearm)
+
+.debug_info     0x00000000    0x65543
+ .debug_info    0x00000000      0x681 isr_tables.o
+ .debug_info    0x00000681     0x2dd2 src/built-in.o
+ .debug_info    0x00003453     0x58bd drivers/built-in.o
+ .debug_info    0x00008d10     0x1eba lib/built-in.o
+ .debug_info    0x0000abca      0x854 misc/built-in.o
+ .debug_info    0x0000b41e     0x141e ext/built-in.o
+ .debug_info    0x0000c83c    0x400e8 subsys/built-in.o
+ .debug_info    0x0004c924     0x9cc6 arch/built-in.o
+ .debug_info    0x000565ea      0x7d1 kernel/lib.a(device.o)
+ .debug_info    0x00056dbb      0x70c kernel/lib.a(errno.o)
+ .debug_info    0x000574c7      0x951 kernel/lib.a(idle.o)
+ .debug_info    0x00057e18     0x11d2 kernel/lib.a(init.o)
+ .debug_info    0x00058fea     0x11b4 kernel/lib.a(mutex.o)
+ .debug_info    0x0005a19e     0x175d kernel/lib.a(poll.o)
+ .debug_info    0x0005b8fb     0x19a5 kernel/lib.a(queue.o)
+ .debug_info    0x0005d2a0     0x1d4d kernel/lib.a(sched.o)
+ .debug_info    0x0005efed     0x1345 kernel/lib.a(sem.o)
+ .debug_info    0x00060332     0x12d3 kernel/lib.a(sys_clock.o)
+ .debug_info    0x00061605      0x71b kernel/lib.a(system_work_q.o)
+ .debug_info    0x00061d20     0x1e03 kernel/lib.a(thread.o)
+ .debug_info    0x00063b23     0x132f kernel/lib.a(work_q.o)
+ .debug_info    0x00064e52      0x6f1 ./arch/arm/core/offsets/offsets.o
+
+.debug_abbrev   0x00000000     0xfe43
+ .debug_abbrev  0x00000000      0x188 isr_tables.o
+ .debug_abbrev  0x00000188      0xac1 src/built-in.o
+ .debug_abbrev  0x00000c49     0x14bf drivers/built-in.o
+ .debug_abbrev  0x00002108      0xc2f lib/built-in.o
+ .debug_abbrev  0x00002d37      0x34d misc/built-in.o
+ .debug_abbrev  0x00003084      0x61c ext/built-in.o
+ .debug_abbrev  0x000036a0     0x6a05 subsys/built-in.o
+ .debug_abbrev  0x0000a0a5     0x2604 arch/built-in.o
+ .debug_abbrev  0x0000c6a9      0x273 kernel/lib.a(device.o)
+ .debug_abbrev  0x0000c91c      0x1df kernel/lib.a(errno.o)
+ .debug_abbrev  0x0000cafb      0x347 kernel/lib.a(idle.o)
+ .debug_abbrev  0x0000ce42      0x49f kernel/lib.a(init.o)
+ .debug_abbrev  0x0000d2e1      0x42b kernel/lib.a(mutex.o)
+ .debug_abbrev  0x0000d70c      0x526 kernel/lib.a(poll.o)
+ .debug_abbrev  0x0000dc32      0x4c9 kernel/lib.a(queue.o)
+ .debug_abbrev  0x0000e0fb      0x5dc kernel/lib.a(sched.o)
+ .debug_abbrev  0x0000e6d7      0x4c9 kernel/lib.a(sem.o)
+ .debug_abbrev  0x0000eba0      0x426 kernel/lib.a(sys_clock.o)
+ .debug_abbrev  0x0000efc6      0x1e5 kernel/lib.a(system_work_q.o)
+ .debug_abbrev  0x0000f1ab      0x62c kernel/lib.a(thread.o)
+ .debug_abbrev  0x0000f7d7      0x4a0 kernel/lib.a(work_q.o)
+ .debug_abbrev  0x0000fc77      0x1cc ./arch/arm/core/offsets/offsets.o
+
+.debug_aranges  0x00000000     0x2330
+ .debug_aranges
+                0x00000000       0x18 isr_tables.o
+ .debug_aranges
+                0x00000018       0xe0 src/built-in.o
+ .debug_aranges
+                0x000000f8      0x190 drivers/built-in.o
+ .debug_aranges
+                0x00000288      0x228 lib/built-in.o
+ .debug_aranges
+                0x000004b0       0x90 misc/built-in.o
+ .debug_aranges
+                0x00000540      0x100 ext/built-in.o
+ .debug_aranges
+                0x00000640     0x14c8 subsys/built-in.o
+ .debug_aranges
+                0x00001b08      0x378 arch/built-in.o
+ .debug_aranges
+                0x00001e80       0x30 kernel/lib.a(device.o)
+ .debug_aranges
+                0x00001eb0       0x20 kernel/lib.a(errno.o)
+ .debug_aranges
+                0x00001ed0       0x30 kernel/lib.a(idle.o)
+ .debug_aranges
+                0x00001f00       0x48 kernel/lib.a(init.o)
+ .debug_aranges
+                0x00001f48       0x38 kernel/lib.a(mutex.o)
+ .debug_aranges
+                0x00001f80       0x50 kernel/lib.a(poll.o)
+ .debug_aranges
+                0x00001fd0       0x88 kernel/lib.a(queue.o)
+ .debug_aranges
+                0x00002058       0xb8 kernel/lib.a(sched.o)
+ .debug_aranges
+                0x00002110       0x50 kernel/lib.a(sem.o)
+ .debug_aranges
+                0x00002160       0x60 kernel/lib.a(sys_clock.o)
+ .debug_aranges
+                0x000021c0       0x20 kernel/lib.a(system_work_q.o)
+ .debug_aranges
+                0x000021e0       0xe0 kernel/lib.a(thread.o)
+ .debug_aranges
+                0x000022c0       0x50 kernel/lib.a(work_q.o)
+ .debug_aranges
+                0x00002310       0x20 ./arch/arm/core/offsets/offsets.o
+
+.debug_line     0x00000000    0x13f60
+ .debug_line    0x00000000      0x105 isr_tables.o
+ .debug_line    0x00000105      0x9a7 src/built-in.o
+ .debug_line    0x00000aac     0x111e drivers/built-in.o
+ .debug_line    0x00001bca      0xe9d lib/built-in.o
+ .debug_line    0x00002a67      0x359 misc/built-in.o
+ .debug_line    0x00002dc0      0x726 ext/built-in.o
+ .debug_line    0x000034e6     0xa829 subsys/built-in.o
+ .debug_line    0x0000dd0f     0x287e arch/built-in.o
+ .debug_line    0x0001058d      0x195 kernel/lib.a(device.o)
+ .debug_line    0x00010722      0x218 kernel/lib.a(errno.o)
+ .debug_line    0x0001093a      0x329 kernel/lib.a(idle.o)
+ .debug_line    0x00010c63      0x404 kernel/lib.a(init.o)
+ .debug_line    0x00011067      0x45f kernel/lib.a(mutex.o)
+ .debug_line    0x000114c6      0x529 kernel/lib.a(poll.o)
+ .debug_line    0x000119ef      0x5b8 kernel/lib.a(queue.o)
+ .debug_line    0x00011fa7      0x707 kernel/lib.a(sched.o)
+ .debug_line    0x000126ae      0x468 kernel/lib.a(sem.o)
+ .debug_line    0x00012b16      0x471 kernel/lib.a(sys_clock.o)
+ .debug_line    0x00012f87      0x12d kernel/lib.a(system_work_q.o)
+ .debug_line    0x000130b4      0x76f kernel/lib.a(thread.o)
+ .debug_line    0x00013823      0x4cd kernel/lib.a(work_q.o)
+ .debug_line    0x00013cf0      0x270 ./arch/arm/core/offsets/offsets.o
+
+.debug_str      0x00000000     0xc5f4
+ .debug_str     0x00000000      0x4c9 isr_tables.o
+                                0x5d3 (size before relaxing)
+ .debug_str     0x000004c9      0x5b1 src/built-in.o
+                               0x21a4 (size before relaxing)
+ .debug_str     0x00000a7a     0x12c0 drivers/built-in.o
+                               0x39d7 (size before relaxing)
+ .debug_str     0x00001d3a      0x54c lib/built-in.o
+                               0x15f9 (size before relaxing)
+ .debug_str     0x00002286      0x167 misc/built-in.o
+                                0x583 (size before relaxing)
+ .debug_str     0x000023ed      0x2e0 ext/built-in.o
+                                0xb5e (size before relaxing)
+ .debug_str     0x000026cd     0x81b2 subsys/built-in.o
+                              0x18a66 (size before relaxing)
+ .debug_str     0x0000a87f      0xa8b arch/built-in.o
+                               0x6773 (size before relaxing)
+ .debug_str     0x0000b30a       0xfc kernel/lib.a(device.o)
+                                0x606 (size before relaxing)
+ .debug_str     0x0000b406       0x30 kernel/lib.a(errno.o)
+                                0x558 (size before relaxing)
+ .debug_str     0x0000b436       0xff kernel/lib.a(idle.o)
+                                0x6c1 (size before relaxing)
+ .debug_str     0x0000b535      0x18e kernel/lib.a(init.o)
+                                0xba4 (size before relaxing)
+ .debug_str     0x0000b6c3      0x28d kernel/lib.a(mutex.o)
+                                0x935 (size before relaxing)
+ .debug_str     0x0000b950      0x22b kernel/lib.a(poll.o)
+                                0xb28 (size before relaxing)
+ .debug_str     0x0000bb7b       0xe6 kernel/lib.a(queue.o)
+                                0xad1 (size before relaxing)
+ .debug_str     0x0000bc61      0x328 kernel/lib.a(sched.o)
+                                0xbf1 (size before relaxing)
+ .debug_str     0x0000bf89       0x70 kernel/lib.a(sem.o)
+                                0x9b8 (size before relaxing)
+ .debug_str     0x0000bff9      0x17d kernel/lib.a(sys_clock.o)
+                                0x931 (size before relaxing)
+ .debug_str     0x0000c176       0xa6 kernel/lib.a(system_work_q.o)
+                                0x58b (size before relaxing)
+ .debug_str     0x0000c21c      0x334 kernel/lib.a(thread.o)
+                                0xd56 (size before relaxing)
+ .debug_str     0x0000c550       0x62 kernel/lib.a(work_q.o)
+                                0x8f3 (size before relaxing)
+ .debug_str     0x0000c5b2       0x42 ./arch/arm/core/offsets/offsets.o
+                                0x562 (size before relaxing)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e isr_tables.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e      0x1bc src/built-in.o
+ .comment       0x0000006e      0x309 drivers/built-in.o
+ .comment       0x0000006e      0x456 lib/built-in.o
+ .comment       0x0000006e       0xde misc/built-in.o
+ .comment       0x0000006e      0x1bc ext/built-in.o
+ .comment       0x0000006e      0xc93 subsys/built-in.o
+ .comment       0x0000006e      0x6f0 arch/built-in.o
+ .comment       0x0000006e       0x6f kernel/lib.a(device.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(errno.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(idle.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(init.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(mutex.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(poll.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(queue.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(sched.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(sem.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(sys_clock.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(system_work_q.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(thread.o)
+ .comment       0x0000006e       0x6f kernel/lib.a(work_q.o)
+ .comment       0x0000006e       0x6f ./arch/arm/core/offsets/offsets.o
+
+.ARM.attributes
+                0x00000000       0x31
+ .ARM.attributes
+                0x00000000       0x33 isr_tables.o
+ .ARM.attributes
+                0x00000033       0x33 src/built-in.o
+ .ARM.attributes
+                0x00000066       0x33 drivers/built-in.o
+ .ARM.attributes
+                0x00000099       0x33 lib/built-in.o
+ .ARM.attributes
+                0x000000cc       0x33 misc/built-in.o
+ .ARM.attributes
+                0x000000ff       0x33 ext/built-in.o
+ .ARM.attributes
+                0x00000132       0x33 subsys/built-in.o
+ .ARM.attributes
+                0x00000165       0x31 arch/built-in.o
+ .ARM.attributes
+                0x00000196       0x33 kernel/lib.a(device.o)
+ .ARM.attributes
+                0x000001c9       0x33 kernel/lib.a(errno.o)
+ .ARM.attributes
+                0x000001fc       0x33 kernel/lib.a(idle.o)
+ .ARM.attributes
+                0x0000022f       0x33 kernel/lib.a(init.o)
+ .ARM.attributes
+                0x00000262       0x33 kernel/lib.a(mutex.o)
+ .ARM.attributes
+                0x00000295       0x33 kernel/lib.a(poll.o)
+ .ARM.attributes
+                0x000002c8       0x33 kernel/lib.a(queue.o)
+ .ARM.attributes
+                0x000002fb       0x33 kernel/lib.a(sched.o)
+ .ARM.attributes
+                0x0000032e       0x33 kernel/lib.a(sem.o)
+ .ARM.attributes
+                0x00000361       0x33 kernel/lib.a(sys_clock.o)
+ .ARM.attributes
+                0x00000394       0x33 kernel/lib.a(system_work_q.o)
+ .ARM.attributes
+                0x000003c7       0x33 kernel/lib.a(thread.o)
+ .ARM.attributes
+                0x000003fa       0x33 kernel/lib.a(work_q.o)
+ .ARM.attributes
+                0x0000042d       0x33 ./arch/arm/core/offsets/offsets.o
+ .ARM.attributes
+                0x00000460       0x1e /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000047e       0x2e /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_popcountsi2.o)
+ .ARM.attributes
+                0x000004ac       0x2e /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x000004da       0x1e /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_dvmd_tls.o)
+
+.debug_frame    0x00000000     0x5eac
+ .debug_frame   0x00000000      0x1cc src/built-in.o
+ .debug_frame   0x000001cc      0x338 drivers/built-in.o
+ .debug_frame   0x00000504      0x4c0 lib/built-in.o
+ .debug_frame   0x000009c4      0x188 misc/built-in.o
+ .debug_frame   0x00000b4c      0x25c ext/built-in.o
+ .debug_frame   0x00000da8     0x4188 subsys/built-in.o
+ .debug_frame   0x00004f30      0x394 arch/built-in.o
+ .debug_frame   0x000052c4       0x68 kernel/lib.a(device.o)
+ .debug_frame   0x0000532c       0x20 kernel/lib.a(errno.o)
+ .debug_frame   0x0000534c       0x58 kernel/lib.a(idle.o)
+ .debug_frame   0x000053a4       0x80 kernel/lib.a(init.o)
+ .debug_frame   0x00005424       0x90 kernel/lib.a(mutex.o)
+ .debug_frame   0x000054b4       0xd0 kernel/lib.a(poll.o)
+ .debug_frame   0x00005584      0x170 kernel/lib.a(queue.o)
+ .debug_frame   0x000056f4      0x1f0 kernel/lib.a(sched.o)
+ .debug_frame   0x000058e4       0xb4 kernel/lib.a(sem.o)
+ .debug_frame   0x00005998       0xdc kernel/lib.a(sys_clock.o)
+ .debug_frame   0x00005a74       0x28 kernel/lib.a(system_work_q.o)
+ .debug_frame   0x00005a9c      0x29c kernel/lib.a(thread.o)
+ .debug_frame   0x00005d38       0xd4 kernel/lib.a(work_q.o)
+ .debug_frame   0x00005e0c       0x20 ./arch/arm/core/offsets/offsets.o
+ .debug_frame   0x00005e2c       0x2c /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_aeabi_uldivmod.o)
+ .debug_frame   0x00005e58       0x20 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_popcountsi2.o)
+ .debug_frame   0x00005e78       0x34 /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/libgcc.a(_udivmoddi4.o)
+
+.debug_loc      0x00000000    0x26a74
+ .debug_loc     0x00000000      0x580 src/built-in.o
+ .debug_loc     0x00000580     0x11e5 drivers/built-in.o
+ .debug_loc     0x00001765     0x293e lib/built-in.o
+ .debug_loc     0x000040a3      0x956 misc/built-in.o
+ .debug_loc     0x000049f9      0x965 ext/built-in.o
+ .debug_loc     0x0000535e    0x1ca1b subsys/built-in.o
+ .debug_loc     0x00021d79      0xa58 arch/built-in.o
+ .debug_loc     0x000227d1       0xdf kernel/lib.a(device.o)
+ .debug_loc     0x000228b0       0x8f kernel/lib.a(idle.o)
+ .debug_loc     0x0002293f      0x198 kernel/lib.a(init.o)
+ .debug_loc     0x00022ad7      0x424 kernel/lib.a(mutex.o)
+ .debug_loc     0x00022efb      0x61f kernel/lib.a(poll.o)
+ .debug_loc     0x0002351a      0x97e kernel/lib.a(queue.o)
+ .debug_loc     0x00023e98      0xfca kernel/lib.a(sched.o)
+ .debug_loc     0x00024e62      0x48c kernel/lib.a(sem.o)
+ .debug_loc     0x000252ee      0x515 kernel/lib.a(sys_clock.o)
+ .debug_loc     0x00025803       0x21 kernel/lib.a(system_work_q.o)
+ .debug_loc     0x00025824      0xb44 kernel/lib.a(thread.o)
+ .debug_loc     0x00026368      0x70c kernel/lib.a(work_q.o)
+
+.debug_ranges   0x00000000     0x4118
+ .debug_ranges  0x00000000       0xd0 src/built-in.o
+ .debug_ranges  0x000000d0      0x1e0 drivers/built-in.o
+ .debug_ranges  0x000002b0      0x290 lib/built-in.o
+ .debug_ranges  0x00000540       0xa8 misc/built-in.o
+ .debug_ranges  0x000005e8      0x108 ext/built-in.o
+ .debug_ranges  0x000006f0     0x2a98 subsys/built-in.o
+ .debug_ranges  0x00003188      0x298 arch/built-in.o
+ .debug_ranges  0x00003420       0x20 kernel/lib.a(device.o)
+ .debug_ranges  0x00003440       0x10 kernel/lib.a(errno.o)
+ .debug_ranges  0x00003450       0xa0 kernel/lib.a(idle.o)
+ .debug_ranges  0x000034f0       0x58 kernel/lib.a(init.o)
+ .debug_ranges  0x00003548       0xd8 kernel/lib.a(mutex.o)
+ .debug_ranges  0x00003620       0xd0 kernel/lib.a(poll.o)
+ .debug_ranges  0x000036f0      0x1a0 kernel/lib.a(queue.o)
+ .debug_ranges  0x00003890      0x2a0 kernel/lib.a(sched.o)
+ .debug_ranges  0x00003b30      0x120 kernel/lib.a(sem.o)
+ .debug_ranges  0x00003c50      0x180 kernel/lib.a(sys_clock.o)
+ .debug_ranges  0x00003dd0       0x10 kernel/lib.a(system_work_q.o)
+ .debug_ranges  0x00003de0      0x1f8 kernel/lib.a(thread.o)
+ .debug_ranges  0x00003fd8      0x130 kernel/lib.a(work_q.o)
+ .debug_ranges  0x00004108       0x10 ./arch/arm/core/offsets/offsets.o

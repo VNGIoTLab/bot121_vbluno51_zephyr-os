@@ -1,0 +1,1 @@
+cmd_subsys/net/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o subsys/net/built-in.o subsys/net/buf.o subsys/net/lib/built-in.o 

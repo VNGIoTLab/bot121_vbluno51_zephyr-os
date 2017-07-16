@@ -1,0 +1,1 @@
+cmd_subsys/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o subsys/built-in.o subsys/bluetooth/built-in.o subsys/net/built-in.o subsys/logging/built-in.o subsys/debug/built-in.o 

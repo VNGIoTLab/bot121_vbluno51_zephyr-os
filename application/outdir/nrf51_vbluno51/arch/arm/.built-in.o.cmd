@@ -1,0 +1,1 @@
+cmd_arch/arm/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o arch/arm/built-in.o arch/arm/soc/nordic_nrf5/built-in.o arch/arm/core/built-in.o 

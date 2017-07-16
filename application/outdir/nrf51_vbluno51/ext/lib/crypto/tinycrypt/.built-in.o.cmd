@@ -1,0 +1,1 @@
+cmd_ext/lib/crypto/tinycrypt/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o ext/lib/crypto/tinycrypt/built-in.o ext/lib/crypto/tinycrypt/source/utils.o ext/lib/crypto/tinycrypt/source/aes_decrypt.o ext/lib/crypto/tinycrypt/source/aes_encrypt.o 

@@ -1,0 +1,15 @@
+-nostartfiles -nodefaultlibs -nostdlib -static -Wl,-X -Wl,-N -Wl,--gc-sections -Wl,--build-id=none
+-Wl,-Map=zephyr.map
+-L ./include/generated
+-u _OffsetAbsSyms -u _ConfigAbsSyms
+-e __start
+-Wl,--start-group
+-Wl,--whole-archive
+
+ src/built-in.o
+libzephyr.a
+-Wl,--no-whole-archive
+kernel/lib.a
+./arch/arm/core/offsets/offsets.o
+-Wl,--end-group
+-L /home/mrnam/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m -L /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//arm-none-eabi/lib/armv6-m  -lgcc

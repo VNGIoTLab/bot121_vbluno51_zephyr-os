@@ -1,0 +1,1 @@
+cmd_subsys/bluetooth/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o subsys/bluetooth/built-in.o subsys/bluetooth/common/built-in.o subsys/bluetooth/host/built-in.o subsys/bluetooth/controller/built-in.o 

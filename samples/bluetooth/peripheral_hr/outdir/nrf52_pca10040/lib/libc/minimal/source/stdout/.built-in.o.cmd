@@ -1,0 +1,1 @@
+cmd_lib/libc/minimal/source/stdout/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o lib/libc/minimal/source/stdout/built-in.o lib/libc/minimal/source/stdout/fprintf.o lib/libc/minimal/source/stdout/prf.o lib/libc/minimal/source/stdout/sprintf.o lib/libc/minimal/source/stdout/stdout_console.o 

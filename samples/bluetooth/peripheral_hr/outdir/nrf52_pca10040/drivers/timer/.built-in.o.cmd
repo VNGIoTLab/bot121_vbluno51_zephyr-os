@@ -1,0 +1,1 @@
+cmd_drivers/timer/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o drivers/timer/built-in.o drivers/timer/nrf_rtc_timer.o drivers/timer/sys_clock_init.o 

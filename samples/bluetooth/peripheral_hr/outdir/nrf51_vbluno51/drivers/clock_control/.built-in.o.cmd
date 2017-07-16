@@ -1,0 +1,1 @@
+cmd_drivers/clock_control/built-in.o :=  /home/mrnam/gcc-arm-none-eabi-5_4-2016q3//bin/arm-none-eabi-ld -nostartfiles -nodefaultlibs -nostdlib -static   -r -o drivers/clock_control/built-in.o drivers/clock_control/nrf5_power_clock.o 

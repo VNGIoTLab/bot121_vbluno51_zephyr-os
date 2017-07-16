@@ -1,0 +1,7 @@
+nrf52_pca10040.o: dts/arm/nrf52_pca10040.dts_pre_compiled \
+ /home/mrnam/zephyr/samples/bluetooth/peripheral_hr/outdir/nrf52_pca10040/include/generated/autoconf.h \
+ /home/mrnam/zephyr/dts/arm/nrf52_pca10040.dts \
+ /home/mrnam/zephyr/dts/arm/nordic/nrf52832.dtsi \
+ /home/mrnam/zephyr/dts/arm/armv7-m.dtsi \
+ /home/mrnam/zephyr/dts/common/skeleton.dtsi \
+ /home/mrnam/zephyr/dts/arm/nordic/mem.h

@@ -1,0 +1,7 @@
+nrf51_vbluno51.o: dts/arm/nrf51_vbluno51.dts_pre_compiled \
+ /home/mrnam/bot121_vbluno51_zephyr-os/application/outdir/nrf51_vbluno51/include/generated/autoconf.h \
+ /home/mrnam/bot121_vbluno51_zephyr-os/dts/arm/nrf51_vbluno51.dts \
+ /home/mrnam/bot121_vbluno51_zephyr-os/dts/arm/nordic/nrf51822.dtsi \
+ /home/mrnam/bot121_vbluno51_zephyr-os/dts/arm/armv6-m.dtsi \
+ /home/mrnam/bot121_vbluno51_zephyr-os/dts/common/skeleton.dtsi \
+ /home/mrnam/bot121_vbluno51_zephyr-os/dts/arm/nordic/mem.h

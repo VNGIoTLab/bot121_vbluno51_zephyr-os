@@ -1,0 +1,7 @@
+nrf51_vbluno51.o: dts/arm/nrf51_vbluno51.dts_pre_compiled \
+ /home/mrnam/zephyr/samples/bluetooth/peripheral_csc/outdir/nrf51_vbluno51/include/generated/autoconf.h \
+ /home/mrnam/zephyr/dts/arm/nrf51_vbluno51.dts \
+ /home/mrnam/zephyr/dts/arm/nordic/nrf51822.dtsi \
+ /home/mrnam/zephyr/dts/arm/armv6-m.dtsi \
+ /home/mrnam/zephyr/dts/common/skeleton.dtsi \
+ /home/mrnam/zephyr/dts/arm/nordic/mem.h
